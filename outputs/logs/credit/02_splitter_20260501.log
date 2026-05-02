@@ -1,0 +1,12 @@
+2026-05-01 15:17:18 | INFO     | home_credit.splitter | Starting stratified split...
+2026-05-01 15:17:18 | INFO     | home_credit.splitter | Input shape  : (307511, 122)
+2026-05-01 15:17:18 | INFO     | home_credit.splitter | Train shape       : (246008, 122)
+2026-05-01 15:17:18 | INFO     | home_credit.splitter | Val shape         : (61503, 122)
+2026-05-01 15:17:18 | INFO     | home_credit.splitter | Train default rate: 8.07%
+2026-05-01 15:17:18 | INFO     | home_credit.splitter | Val default rate  : 8.07%
+2026-05-01 20:36:50 | INFO     | home_credit.splitter | Starting stratified split...
+2026-05-01 20:36:50 | INFO     | home_credit.splitter | Input shape  : (307511, 122)
+2026-05-01 20:36:51 | INFO     | home_credit.splitter | Train shape       : (246008, 122)
+2026-05-01 20:36:51 | INFO     | home_credit.splitter | Val shape         : (61503, 122)
+2026-05-01 20:36:51 | INFO     | home_credit.splitter | Train default rate: 8.07%
+2026-05-01 20:36:51 | INFO     | home_credit.splitter | Val default rate  : 8.07%

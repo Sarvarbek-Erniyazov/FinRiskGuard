@@ -1,0 +1,118 @@
+2026-05-01 15:17:20 | INFO     | home_credit.feature_engineer | ==================================================
+2026-05-01 15:17:20 | INFO     | home_credit.feature_engineer | FEATURE ENGINEERING TRAIN DATA
+2026-05-01 15:17:20 | INFO     | home_credit.feature_engineer | Input shape: (246008, 117)
+2026-05-01 15:17:20 | INFO     | home_credit.feature_engineer | FE: EXT_SOURCE combination features
+2026-05-01 15:17:20 | INFO     | home_credit.feature_engineer |   Created: ['FE_ext_mean', 'FE_ext_min', 'FE_ext_max', 'FE_ext_std', 'FE_ext_sum', 'FE_ext12_prod', 'FE_ext23_prod', 'FE_ext13_prod']
+2026-05-01 15:17:20 | INFO     | home_credit.feature_engineer | FE: Age & Employment features
+2026-05-01 15:17:20 | INFO     | home_credit.feature_engineer |   Created: ['FE_age_years', 'FE_age_group', 'FE_employment_ratio', 'FE_registration_age_ratio']
+2026-05-01 15:17:20 | INFO     | home_credit.feature_engineer | FE: Credit & Income ratio features
+2026-05-01 15:17:20 | INFO     | home_credit.feature_engineer |   Created: ['FE_income_log', 'FE_credit_income_ratio', 'FE_annuity_income_ratio', 'FE_annuity_credit_ratio', 'FE_credit_goods_diff', 'FE_credit_goods_ratio']
+2026-05-01 15:17:20 | INFO     | home_credit.feature_engineer | FE: Frequency encoding
+2026-05-01 15:17:20 | INFO     | home_credit.feature_engineer |   [TRAIN] Frequency encoded 6 columns
+2026-05-01 15:17:20 | INFO     | home_credit.feature_engineer | FE: Bureau aggregation
+2026-05-01 15:20:36 | INFO     | home_credit.feature_engineer |   Bureau agg shape: (305811, 13)
+2026-05-01 15:20:36 | INFO     | home_credit.feature_engineer | FE: Previous Application aggregation
+2026-05-01 15:21:25 | INFO     | home_credit.feature_engineer |   Previous app agg shape: (338857, 10)
+2026-05-01 15:21:25 | INFO     | home_credit.feature_engineer | FE: POS CASH aggregation
+2026-05-01 15:21:50 | INFO     | home_credit.feature_engineer |   POS CASH agg shape: (337252, 7)
+2026-05-01 15:21:50 | INFO     | home_credit.feature_engineer | FE: Installments aggregation
+2026-05-01 15:21:51 | INFO     | home_credit.feature_engineer |   Installments agg shape: (339587, 8)
+2026-05-01 15:21:51 | INFO     | home_credit.feature_engineer | FE: Credit Card aggregation
+2026-05-01 15:21:52 | INFO     | home_credit.feature_engineer |   Credit card agg shape: (103558, 10)
+2026-05-01 15:21:52 | INFO     | home_credit.feature_engineer | Total FE features created: 67
+2026-05-01 15:21:52 | INFO     | home_credit.feature_engineer | Output shape: (246008, 184)
+2026-05-01 15:21:52 | INFO     | home_credit.feature_engineer | FEATURE ENGINEERING TRAIN COMPLETE
+2026-05-01 15:21:52 | INFO     | home_credit.feature_engineer | ==================================================
+2026-05-01 15:21:52 | INFO     | home_credit.feature_engineer | ==================================================
+2026-05-01 15:21:52 | INFO     | home_credit.feature_engineer | FEATURE ENGINEERING TEST DATA
+2026-05-01 15:21:52 | INFO     | home_credit.feature_engineer | Input shape: (61503, 117)
+2026-05-01 15:21:52 | INFO     | home_credit.feature_engineer | FE: EXT_SOURCE combination features
+2026-05-01 15:21:52 | INFO     | home_credit.feature_engineer |   Created: ['FE_ext_mean', 'FE_ext_min', 'FE_ext_max', 'FE_ext_std', 'FE_ext_sum', 'FE_ext12_prod', 'FE_ext23_prod', 'FE_ext13_prod']
+2026-05-01 15:21:52 | INFO     | home_credit.feature_engineer | FE: Age & Employment features
+2026-05-01 15:21:52 | INFO     | home_credit.feature_engineer |   Created: ['FE_age_years', 'FE_age_group', 'FE_employment_ratio', 'FE_registration_age_ratio']
+2026-05-01 15:21:52 | INFO     | home_credit.feature_engineer | FE: Credit & Income ratio features
+2026-05-01 15:21:52 | INFO     | home_credit.feature_engineer |   Created: ['FE_income_log', 'FE_credit_income_ratio', 'FE_annuity_income_ratio', 'FE_annuity_credit_ratio', 'FE_credit_goods_diff', 'FE_credit_goods_ratio']
+2026-05-01 15:21:52 | INFO     | home_credit.feature_engineer | FE: Frequency encoding
+2026-05-01 15:21:52 | INFO     | home_credit.feature_engineer |   [TEST] Applied frequency encoding to 6 columns
+2026-05-01 15:21:52 | INFO     | home_credit.feature_engineer | Total FE features applied: 67
+2026-05-01 15:21:52 | INFO     | home_credit.feature_engineer | Output shape: (61503, 184)
+2026-05-01 15:21:52 | INFO     | home_credit.feature_engineer | FEATURE ENGINEERING TEST COMPLETE
+2026-05-01 15:21:52 | INFO     | home_credit.feature_engineer | ==================================================
+2026-05-01 15:21:52 | INFO     | home_credit.feature_engineer | ==================================================
+2026-05-01 15:21:52 | INFO     | home_credit.feature_engineer | FEATURE ENGINEERING TEST DATA
+2026-05-01 15:21:52 | INFO     | home_credit.feature_engineer | Input shape: (48744, 116)
+2026-05-01 15:21:52 | INFO     | home_credit.feature_engineer | FE: EXT_SOURCE combination features
+2026-05-01 15:21:52 | INFO     | home_credit.feature_engineer |   Created: ['FE_ext_mean', 'FE_ext_min', 'FE_ext_max', 'FE_ext_std', 'FE_ext_sum', 'FE_ext12_prod', 'FE_ext23_prod', 'FE_ext13_prod']
+2026-05-01 15:21:52 | INFO     | home_credit.feature_engineer | FE: Age & Employment features
+2026-05-01 15:21:52 | INFO     | home_credit.feature_engineer |   Created: ['FE_age_years', 'FE_age_group', 'FE_employment_ratio', 'FE_registration_age_ratio']
+2026-05-01 15:21:52 | INFO     | home_credit.feature_engineer | FE: Credit & Income ratio features
+2026-05-01 15:21:52 | INFO     | home_credit.feature_engineer |   Created: ['FE_income_log', 'FE_credit_income_ratio', 'FE_annuity_income_ratio', 'FE_annuity_credit_ratio', 'FE_credit_goods_diff', 'FE_credit_goods_ratio']
+2026-05-01 15:21:52 | INFO     | home_credit.feature_engineer | FE: Frequency encoding
+2026-05-01 15:21:52 | INFO     | home_credit.feature_engineer |   [TEST] Applied frequency encoding to 6 columns
+2026-05-01 15:21:52 | INFO     | home_credit.feature_engineer | Total FE features applied: 67
+2026-05-01 15:21:52 | INFO     | home_credit.feature_engineer | Output shape: (48744, 183)
+2026-05-01 15:21:52 | INFO     | home_credit.feature_engineer | FEATURE ENGINEERING TEST COMPLETE
+2026-05-01 15:21:52 | INFO     | home_credit.feature_engineer | ==================================================
+2026-05-01 20:23:01 | INFO     | home_credit.feature_engineer | ==================================================
+2026-05-01 20:23:01 | INFO     | home_credit.feature_engineer | FEATURE ENGINEERING TRAIN DATA
+2026-05-01 20:36:52 | INFO     | home_credit.feature_engineer | ==================================================
+2026-05-01 20:36:52 | INFO     | home_credit.feature_engineer | FEATURE ENGINEERING TRAIN DATA
+2026-05-01 20:36:52 | INFO     | home_credit.feature_engineer | Input shape: (246008, 117)
+2026-05-01 20:36:52 | INFO     | home_credit.feature_engineer | FE: EXT_SOURCE combination features
+2026-05-01 20:36:52 | INFO     | home_credit.feature_engineer |   Created: ['FE_ext_mean', 'FE_ext_min', 'FE_ext_max', 'FE_ext_std', 'FE_ext_sum', 'FE_ext12_prod', 'FE_ext23_prod', 'FE_ext13_prod']
+2026-05-01 20:36:52 | INFO     | home_credit.feature_engineer | FE: Age & Employment features
+2026-05-01 20:36:52 | INFO     | home_credit.feature_engineer |   Created: ['FE_age_years', 'FE_age_group', 'FE_employment_ratio', 'FE_registration_age_ratio']
+2026-05-01 20:36:52 | INFO     | home_credit.feature_engineer | FE: Credit & Income ratio features
+2026-05-01 20:36:52 | INFO     | home_credit.feature_engineer |   Created: ['FE_income_log', 'FE_credit_income_ratio', 'FE_annuity_income_ratio', 'FE_annuity_credit_ratio', 'FE_credit_goods_diff', 'FE_credit_goods_ratio']
+2026-05-01 20:36:52 | INFO     | home_credit.feature_engineer | FE: Frequency encoding
+2026-05-01 20:36:52 | INFO     | home_credit.feature_engineer |   [TRAIN] Frequency encoded 6 columns
+2026-05-01 20:36:52 | INFO     | home_credit.feature_engineer | FE: Target encoding
+2026-05-01 20:36:53 | INFO     | home_credit.feature_engineer |   [TRAIN] Target encoded 2 columns (CV=5, smoothing=20.0)
+2026-05-01 20:36:53 | INFO     | home_credit.feature_engineer | FE: Bureau aggregation (enhanced)
+2026-05-01 20:38:24 | INFO     | home_credit.feature_engineer |   Bureau agg shape: (305811, 18)
+2026-05-01 20:38:24 | INFO     | home_credit.feature_engineer | FE: Previous Application aggregation (enhanced)
+2026-05-01 20:39:41 | INFO     | home_credit.feature_engineer |   Previous app agg shape: (338857, 14)
+2026-05-01 20:39:41 | INFO     | home_credit.feature_engineer | FE: POS CASH aggregation
+2026-05-01 20:40:06 | INFO     | home_credit.feature_engineer |   POS CASH agg shape: (337252, 7)
+2026-05-01 20:40:06 | INFO     | home_credit.feature_engineer | FE: Installments aggregation
+2026-05-01 20:40:07 | INFO     | home_credit.feature_engineer |   Installments agg shape: (339587, 8)
+2026-05-01 20:40:07 | INFO     | home_credit.feature_engineer | FE: Credit Card aggregation
+2026-05-01 20:40:08 | INFO     | home_credit.feature_engineer |   Credit card agg shape: (103558, 10)
+2026-05-01 20:40:08 | INFO     | home_credit.feature_engineer | Total FE features created: 78
+2026-05-01 20:40:08 | INFO     | home_credit.feature_engineer | Output shape: (246008, 195)
+2026-05-01 20:40:08 | INFO     | home_credit.feature_engineer | FEATURE ENGINEERING TRAIN COMPLETE
+2026-05-01 20:40:08 | INFO     | home_credit.feature_engineer | ==================================================
+2026-05-01 20:40:08 | INFO     | home_credit.feature_engineer | ==================================================
+2026-05-01 20:40:08 | INFO     | home_credit.feature_engineer | FEATURE ENGINEERING TEST DATA
+2026-05-01 20:40:08 | INFO     | home_credit.feature_engineer | Input shape: (61503, 117)
+2026-05-01 20:40:08 | INFO     | home_credit.feature_engineer | FE: EXT_SOURCE combination features
+2026-05-01 20:40:08 | INFO     | home_credit.feature_engineer |   Created: ['FE_ext_mean', 'FE_ext_min', 'FE_ext_max', 'FE_ext_std', 'FE_ext_sum', 'FE_ext12_prod', 'FE_ext23_prod', 'FE_ext13_prod']
+2026-05-01 20:40:08 | INFO     | home_credit.feature_engineer | FE: Age & Employment features
+2026-05-01 20:40:08 | INFO     | home_credit.feature_engineer |   Created: ['FE_age_years', 'FE_age_group', 'FE_employment_ratio', 'FE_registration_age_ratio']
+2026-05-01 20:40:08 | INFO     | home_credit.feature_engineer | FE: Credit & Income ratio features
+2026-05-01 20:40:08 | INFO     | home_credit.feature_engineer |   Created: ['FE_income_log', 'FE_credit_income_ratio', 'FE_annuity_income_ratio', 'FE_annuity_credit_ratio', 'FE_credit_goods_diff', 'FE_credit_goods_ratio']
+2026-05-01 20:40:08 | INFO     | home_credit.feature_engineer | FE: Frequency encoding
+2026-05-01 20:40:08 | INFO     | home_credit.feature_engineer |   [TEST] Applied frequency encoding to 6 columns
+2026-05-01 20:40:08 | INFO     | home_credit.feature_engineer | FE: Target encoding
+2026-05-01 20:40:08 | INFO     | home_credit.feature_engineer |   [TEST] Applied target encoding to 2 columns
+2026-05-01 20:40:08 | INFO     | home_credit.feature_engineer | Total FE features applied: 78
+2026-05-01 20:40:08 | INFO     | home_credit.feature_engineer | Output shape: (61503, 195)
+2026-05-01 20:40:08 | INFO     | home_credit.feature_engineer | FEATURE ENGINEERING TEST COMPLETE
+2026-05-01 20:40:08 | INFO     | home_credit.feature_engineer | ==================================================
+2026-05-01 20:40:08 | INFO     | home_credit.feature_engineer | ==================================================
+2026-05-01 20:40:08 | INFO     | home_credit.feature_engineer | FEATURE ENGINEERING TEST DATA
+2026-05-01 20:40:08 | INFO     | home_credit.feature_engineer | Input shape: (48744, 116)
+2026-05-01 20:40:08 | INFO     | home_credit.feature_engineer | FE: EXT_SOURCE combination features
+2026-05-01 20:40:08 | INFO     | home_credit.feature_engineer |   Created: ['FE_ext_mean', 'FE_ext_min', 'FE_ext_max', 'FE_ext_std', 'FE_ext_sum', 'FE_ext12_prod', 'FE_ext23_prod', 'FE_ext13_prod']
+2026-05-01 20:40:08 | INFO     | home_credit.feature_engineer | FE: Age & Employment features
+2026-05-01 20:40:08 | INFO     | home_credit.feature_engineer |   Created: ['FE_age_years', 'FE_age_group', 'FE_employment_ratio', 'FE_registration_age_ratio']
+2026-05-01 20:40:08 | INFO     | home_credit.feature_engineer | FE: Credit & Income ratio features
+2026-05-01 20:40:08 | INFO     | home_credit.feature_engineer |   Created: ['FE_income_log', 'FE_credit_income_ratio', 'FE_annuity_income_ratio', 'FE_annuity_credit_ratio', 'FE_credit_goods_diff', 'FE_credit_goods_ratio']
+2026-05-01 20:40:08 | INFO     | home_credit.feature_engineer | FE: Frequency encoding
+2026-05-01 20:40:08 | INFO     | home_credit.feature_engineer |   [TEST] Applied frequency encoding to 6 columns
+2026-05-01 20:40:08 | INFO     | home_credit.feature_engineer | FE: Target encoding
+2026-05-01 20:40:08 | INFO     | home_credit.feature_engineer |   [TEST] Applied target encoding to 2 columns
+2026-05-01 20:40:08 | INFO     | home_credit.feature_engineer | Total FE features applied: 78
+2026-05-01 20:40:08 | INFO     | home_credit.feature_engineer | Output shape: (48744, 194)
+2026-05-01 20:40:08 | INFO     | home_credit.feature_engineer | FEATURE ENGINEERING TEST COMPLETE
+2026-05-01 20:40:08 | INFO     | home_credit.feature_engineer | ==================================================

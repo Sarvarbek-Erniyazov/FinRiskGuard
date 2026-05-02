@@ -1,0 +1,60 @@
+2026-04-30 20:30:22 | INFO     | fraud_pipeline | ============================================================
+2026-04-30 20:30:22 | INFO     | fraud_pipeline | FINRISKGUARD — FRAUD PIPELINE (IEEE-CIS)
+2026-04-30 20:30:22 | INFO     | fraud_pipeline | Stage: all
+2026-04-30 20:30:22 | INFO     | fraud_pipeline | ============================================================
+2026-04-30 20:30:22 | INFO     | fraud_pipeline | ============================================================
+2026-04-30 20:30:22 | INFO     | fraud_pipeline | STAGE 1: Loading IEEE-CIS data
+2026-04-30 20:30:22 | INFO     | fraud_pipeline | ============================================================
+2026-04-30 20:30:37 | INFO     | fraud_pipeline | Train shape      : (590540, 434)
+2026-04-30 20:30:37 | INFO     | fraud_pipeline | Test shape       : (506691, 433)
+2026-04-30 20:30:37 | INFO     | fraud_pipeline | Train fraud rate : 3.50%
+2026-04-30 20:30:37 | INFO     | fraud_pipeline | ============================================================
+2026-04-30 20:30:37 | INFO     | fraud_pipeline | STAGE 2: Temporal split (val_ratio=0.20)
+2026-04-30 20:30:37 | INFO     | fraud_pipeline | ============================================================
+2026-04-30 20:30:39 | INFO     | fraud_pipeline | Train : (472432, 434) | Fraud rate: 3.51%
+2026-04-30 20:30:39 | INFO     | fraud_pipeline | Val   : (118108, 434)   | Fraud rate: 3.44%
+2026-04-30 20:30:39 | INFO     | fraud_pipeline | ============================================================
+2026-04-30 20:30:39 | INFO     | fraud_pipeline | STAGE 3: Feature Engineering
+2026-04-30 20:30:39 | INFO     | fraud_pipeline |   Order  : FE FIRST → Preprocessing SECOND
+2026-04-30 20:30:39 | INFO     | fraud_pipeline |   Reason : FE needs raw string columns
+2026-04-30 20:30:39 | INFO     | fraud_pipeline | ============================================================
+2026-04-30 20:32:26 | INFO     | fraud_pipeline | Saved: fe_artifacts.pkl
+2026-04-30 20:32:26 | INFO     | fraud_pipeline | Train : (472432, 483)
+2026-04-30 20:32:26 | INFO     | fraud_pipeline | Val   : (118108, 483)
+2026-04-30 20:32:26 | INFO     | fraud_pipeline | Test  : (506691, 481)
+2026-04-30 20:32:26 | INFO     | fraud_pipeline | FE features total      : 47
+2026-04-30 20:32:26 | INFO     | fraud_pipeline |   D_normalized features: 14
+2026-04-30 20:32:26 | INFO     | fraud_pipeline | FE columns: ['FE_amt_log', 'FE_hour', 'FE_dayofweek', 'FE_day', 'FE_month', 'FE_is_night', 'FE_is_weekend', 'FE_is_peak_fraud_hour', 'FE_D1_normalized', 'FE_D2_normalized', 'FE_D3_normalized', 'FE_D4_normalized', 'FE_D5_normalized', 'FE_D6_normalized', 'FE_D8_normalized', 'FE_D9_normalized', 'FE_D10_normalized', 'FE_D11_normalized', 'FE_D12_normalized', 'FE_D13_normalized', 'FE_D14_normalized', 'FE_D15_normalized', 'FE_uid', 'FE_uid_ext', 'FE_P_email_is_proton', 'FE_P_email_high_risk', 'FE_R_email_is_proton', 'FE_R_email_high_risk', 'FE_email_match', 'FE_browser_is_risky', 'FE_device_is_mobile', 'FE_card1_amt_mean', 'FE_card1_amt_std', 'FE_card1_amt_count', 'FE_card1a1_amt_mean', 'FE_card1a1_amt_std', 'FE_card1a1_amt_count', 'FE_card1_freq', 'FE_card2_freq', 'FE_addr1_freq', 'FE_P_emaildomain_freq', 'FE_R_emaildomain_freq', 'FE_card1_addr1_freq', 'FE_card_full_freq', 'FE_uid_freq', 'FE_uid_ext_freq', 'FE_card1_addr1_count']
+2026-04-30 20:32:26 | INFO     | fraud_pipeline | ============================================================
+2026-04-30 20:32:26 | INFO     | fraud_pipeline | STAGE 4: Preprocessing
+2026-04-30 20:32:26 | INFO     | fraud_pipeline |   Order: After Feature Engineering
+2026-04-30 20:32:26 | INFO     | fraud_pipeline | ============================================================
+2026-04-30 20:33:31 | INFO     | fraud_pipeline | Saved: prep_artifacts.pkl
+2026-04-30 20:33:31 | INFO     | fraud_pipeline | Train : (472432, 478)
+2026-04-30 20:33:31 | INFO     | fraud_pipeline | Val   : (118108, 478)
+2026-04-30 20:33:31 | INFO     | fraud_pipeline | Test  : (506691, 499)
+2026-04-30 20:33:31 | INFO     | fraud_pipeline | ============================================================
+2026-04-30 20:33:31 | INFO     | fraud_pipeline | STAGE 5: Feature Selection
+2026-04-30 20:33:31 | INFO     | fraud_pipeline |   Method : MI + XGB rank-based (mode='rank')
+2026-04-30 20:33:31 | INFO     | fraud_pipeline |   Top_k  : 200 (raised from 150 — D_normalized + extended FE)
+2026-04-30 20:33:31 | INFO     | fraud_pipeline | ============================================================
+2026-04-30 20:55:11 | INFO     | fraud_pipeline | Saved: feature_selection_report.csv, fs_artifacts.pkl
+2026-04-30 20:55:11 | INFO     | fraud_pipeline | WARNING: 8 selected features missing in test set:
+2026-04-30 20:55:11 | INFO     | fraud_pipeline |   ['id_17', 'id_32', 'id_01', 'id_13', 'id_20', 'id_11', 'id_14', 'id_02']
+2026-04-30 20:55:19 | INFO     | fraud_pipeline | Saved: train/val/test_fraud_features.parquet
+2026-04-30 20:55:19 | INFO     | fraud_pipeline | Train : (472432, 205)
+2026-04-30 20:55:19 | INFO     | fraud_pipeline | Val   : (118108, 205)
+2026-04-30 20:55:19 | INFO     | fraud_pipeline | Test  : (506691, 196)
+2026-04-30 20:55:19 | INFO     | fraud_pipeline | Selected feature breakdown:
+2026-04-30 20:55:19 | INFO     | fraud_pipeline |   FE_ engineered   : 33
+2026-04-30 20:55:19 | INFO     | fraud_pipeline |   └─ D_normalized  : 14
+2026-04-30 20:55:19 | INFO     | fraud_pipeline |   _isnan flags     : 9
+2026-04-30 20:55:19 | INFO     | fraud_pipeline |   Raw features     : 162
+2026-04-30 20:55:19 | INFO     | fraud_pipeline |   TOTAL            : 204
+2026-04-30 20:55:19 | INFO     | fraud_pipeline | ============================================================
+2026-04-30 20:55:19 | INFO     | fraud_pipeline | FRAUD PIPELINE COMPLETE
+2026-04-30 20:55:19 | INFO     | fraud_pipeline | Train    : (472432, 205)
+2026-04-30 20:55:19 | INFO     | fraud_pipeline | Val      : (118108, 205)
+2026-04-30 20:55:19 | INFO     | fraud_pipeline | Test     : (506691, 196)
+2026-04-30 20:55:19 | INFO     | fraud_pipeline | Features : 204
+2026-04-30 20:55:19 | INFO     | fraud_pipeline | ============================================================

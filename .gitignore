@@ -1,2 +1,60 @@
+# ── Data ──────────────────────────────────────────────────
 data/raw/*
 !data/raw/.gitkeep
+data/features/*
+!data/features/.gitkeep
+data/features/fraud/*
+!data/features/fraud/.gitkeep
+data/features/credit/*
+!data/features/credit/.gitkeep
+
+# ── Models (large .pkl files) ─────────────────────────────
+outputs/models/*
+!outputs/models/.gitkeep
+outputs/models/fraud/*
+!outputs/models/fraud/.gitkeep
+outputs/models/credit/*
+!outputs/models/credit/.gitkeep
+
+# ── Logs ──────────────────────────────────────────────────
+# outputs/logs/*
+# outputs/logs/.gitkeep
+
+# ── CatBoost training artifacts ───────────────────────────
+catboost_info/
+
+# ── Python ────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Jupyter ───────────────────────────────────────────────
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# ── Environment ───────────────────────────────────────────
+.env
+.venv/
+venv/
+env/
+ENV/
+*.env
+
+# ── IDE ───────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*.DS_Store
+Thumbs.db
+
+# ── OS ────────────────────────────────────────────────────
+.DS_Store
+desktop.ini

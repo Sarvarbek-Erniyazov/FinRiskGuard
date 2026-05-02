@@ -1,0 +1,302 @@
+2026-04-30 21:03:05 | INFO     | fraud_detector | ============================================================
+2026-04-30 21:03:05 | INFO     | fraud_detector | FINRISKGUARD — FRAUD DETECTOR
+2026-04-30 21:03:05 | INFO     | fraud_detector | Stage: all | n_trials: 100
+2026-04-30 21:03:05 | INFO     | fraud_detector | Primary metric  : AUC-ROC
+2026-04-30 21:03:05 | INFO     | fraud_detector | Secondary metric: AUC-PR
+2026-04-30 21:03:05 | INFO     | fraud_detector | ============================================================
+2026-04-30 21:03:05 | INFO     | fraud_detector | Train: (472432, 204) | Fraud rate: 3.51%
+2026-04-30 21:03:05 | INFO     | fraud_detector | Val  : (118108, 204)   | Fraud rate: 3.44%
+2026-04-30 21:03:05 | INFO     | fraud_detector |   FE_ engineered  : 33
+2026-04-30 21:03:05 | INFO     | fraud_detector |   └─ D_normalized : 14
+2026-04-30 21:03:05 | INFO     | fraud_detector |   _isnan flags    : 9
+2026-04-30 21:03:06 | INFO     | fraud_detector | ============================================================
+2026-04-30 21:03:06 | INFO     | fraud_detector | STEP 1: BASELINE MODELS
+2026-04-30 21:03:06 | INFO     | fraud_detector | ============================================================
+2026-04-30 21:03:06 | INFO     | fraud_detector | 
+Training XGBoost baseline...
+2026-04-30 21:03:24 | INFO     | fraud_detector | 
+==================================================
+2026-04-30 21:03:24 | INFO     | fraud_detector | EVALUATION — XGBoost Baseline
+2026-04-30 21:03:24 | INFO     | fraud_detector |   AUC-ROC   : 0.9169  ← PRIMARY
+2026-04-30 21:03:24 | INFO     | fraud_detector |   AUC-PR    : 0.5326  ← SECONDARY
+2026-04-30 21:03:24 | INFO     | fraud_detector |   F1        : 0.4348
+2026-04-30 21:03:24 | INFO     | fraud_detector |   Precision : 0.3224
+2026-04-30 21:03:24 | INFO     | fraud_detector |   Recall    : 0.6673
+2026-04-30 21:03:24 | INFO     | fraud_detector |   Threshold : 0.500
+2026-04-30 21:03:24 | INFO     | fraud_detector | 
+  Confusion Matrix:
+[[108345   5699]
+ [  1352   2712]]
+2026-04-30 21:03:24 | INFO     | fraud_detector |   Fraud caught  (TP): 2,712
+2026-04-30 21:03:24 | INFO     | fraud_detector |   Fraud missed  (FN): 1,352
+2026-04-30 21:03:24 | INFO     | fraud_detector |   False alarm   (FP): 5,699
+2026-04-30 21:03:24 | INFO     | fraud_detector |   Correct clear (TN): 108,345
+2026-04-30 21:03:24 | INFO     | fraud_detector | 
+              precision    recall  f1-score   support
+
+           0     0.9877    0.9500    0.9685    114044
+           1     0.3224    0.6673    0.4348      4064
+
+    accuracy                         0.9403    118108
+   macro avg     0.6551    0.8087    0.7016    118108
+weighted avg     0.9648    0.9403    0.9501    118108
+
+2026-04-30 21:03:24 | INFO     | fraud_detector | 
+Training LightGBM baseline...
+2026-04-30 21:03:31 | INFO     | fraud_detector | 
+==================================================
+2026-04-30 21:03:31 | INFO     | fraud_detector | EVALUATION — LightGBM Baseline
+2026-04-30 21:03:31 | INFO     | fraud_detector |   AUC-ROC   : 0.9140  ← PRIMARY
+2026-04-30 21:03:31 | INFO     | fraud_detector |   AUC-PR    : 0.5124  ← SECONDARY
+2026-04-30 21:03:31 | INFO     | fraud_detector |   F1        : 0.3641
+2026-04-30 21:03:31 | INFO     | fraud_detector |   Precision : 0.2440
+2026-04-30 21:03:31 | INFO     | fraud_detector |   Recall    : 0.7168
+2026-04-30 21:03:31 | INFO     | fraud_detector |   Threshold : 0.500
+2026-04-30 21:03:31 | INFO     | fraud_detector | 
+  Confusion Matrix:
+[[105020   9024]
+ [  1151   2913]]
+2026-04-30 21:03:31 | INFO     | fraud_detector |   Fraud caught  (TP): 2,913
+2026-04-30 21:03:31 | INFO     | fraud_detector |   Fraud missed  (FN): 1,151
+2026-04-30 21:03:31 | INFO     | fraud_detector |   False alarm   (FP): 9,024
+2026-04-30 21:03:31 | INFO     | fraud_detector |   Correct clear (TN): 105,020
+2026-04-30 21:03:31 | INFO     | fraud_detector | 
+              precision    recall  f1-score   support
+
+           0     0.9892    0.9209    0.9538    114044
+           1     0.2440    0.7168    0.3641      4064
+
+    accuracy                         0.9139    118108
+   macro avg     0.6166    0.8188    0.6589    118108
+weighted avg     0.9635    0.9139    0.9335    118108
+
+2026-04-30 21:03:31 | INFO     | fraud_detector | 
+Training CatBoost baseline...
+2026-04-30 21:03:50 | INFO     | fraud_detector | 
+==================================================
+2026-04-30 21:03:50 | INFO     | fraud_detector | EVALUATION — CatBoost Baseline
+2026-04-30 21:03:50 | INFO     | fraud_detector |   AUC-ROC   : 0.9072  ← PRIMARY
+2026-04-30 21:03:50 | INFO     | fraud_detector |   AUC-PR    : 0.4803  ← SECONDARY
+2026-04-30 21:03:50 | INFO     | fraud_detector |   F1        : 0.3178
+2026-04-30 21:03:50 | INFO     | fraud_detector |   Precision : 0.2023
+2026-04-30 21:03:50 | INFO     | fraud_detector |   Recall    : 0.7416
+2026-04-30 21:03:50 | INFO     | fraud_detector |   Threshold : 0.500
+2026-04-30 21:03:50 | INFO     | fraud_detector | 
+  Confusion Matrix:
+[[102156  11888]
+ [  1050   3014]]
+2026-04-30 21:03:50 | INFO     | fraud_detector |   Fraud caught  (TP): 3,014
+2026-04-30 21:03:50 | INFO     | fraud_detector |   Fraud missed  (FN): 1,050
+2026-04-30 21:03:50 | INFO     | fraud_detector |   False alarm   (FP): 11,888
+2026-04-30 21:03:50 | INFO     | fraud_detector |   Correct clear (TN): 102,156
+2026-04-30 21:03:50 | INFO     | fraud_detector | 
+              precision    recall  f1-score   support
+
+           0     0.9898    0.8958    0.9404    114044
+           1     0.2023    0.7416    0.3178      4064
+
+    accuracy                         0.8905    118108
+   macro avg     0.5960    0.8187    0.6291    118108
+weighted avg     0.9627    0.8905    0.9190    118108
+
+2026-04-30 21:03:50 | INFO     | fraud_detector | 
+BASELINE SUMMARY (by AUC-ROC):
+2026-04-30 21:03:50 | INFO     | fraud_detector |   xgb   AUC-ROC=0.9169 | AUC-PR=0.5326
+2026-04-30 21:03:50 | INFO     | fraud_detector |   lgb   AUC-ROC=0.9140 | AUC-PR=0.5124
+2026-04-30 21:03:50 | INFO     | fraud_detector |   cat   AUC-ROC=0.9072 | AUC-PR=0.4803
+2026-04-30 21:03:51 | INFO     | fraud_detector | 
+Optuna tuning: XGBoost...
+2026-04-30 22:55:31 | INFO     | fraud_detector |   XGB best AUC-ROC: 0.9258
+2026-04-30 22:55:31 | INFO     | fraud_detector | 
+Optuna tuning: LightGBM...
+2026-04-30 23:44:31 | INFO     | fraud_detector |   LGB best AUC-ROC: 0.9231
+2026-04-30 23:44:31 | INFO     | fraud_detector | 
+Optuna tuning: CatBoost...
+2026-05-01 01:12:42 | INFO     | fraud_detector |   CAT best AUC-ROC: 0.9180
+2026-05-01 01:12:42 | INFO     | fraud_detector | ============================================================
+2026-05-01 01:12:42 | INFO     | fraud_detector | STEP 2: TUNED MODELS
+2026-05-01 01:12:42 | INFO     | fraud_detector | ============================================================
+2026-05-01 01:14:08 | INFO     | fraud_detector | 
+==================================================
+2026-05-01 01:14:08 | INFO     | fraud_detector | EVALUATION — XGBoost Tuned
+2026-05-01 01:14:08 | INFO     | fraud_detector |   AUC-ROC   : 0.9258  ← PRIMARY
+2026-05-01 01:14:08 | INFO     | fraud_detector |   AUC-PR    : 0.5637  ← SECONDARY
+2026-05-01 01:14:08 | INFO     | fraud_detector |   F1        : 0.4728
+2026-05-01 01:14:08 | INFO     | fraud_detector |   Precision : 0.3665
+2026-05-01 01:14:08 | INFO     | fraud_detector |   Recall    : 0.6661
+2026-05-01 01:14:08 | INFO     | fraud_detector |   Threshold : 0.500
+2026-05-01 01:14:08 | INFO     | fraud_detector | 
+  Confusion Matrix:
+[[109364   4680]
+ [  1357   2707]]
+2026-05-01 01:14:08 | INFO     | fraud_detector |   Fraud caught  (TP): 2,707
+2026-05-01 01:14:08 | INFO     | fraud_detector |   Fraud missed  (FN): 1,357
+2026-05-01 01:14:08 | INFO     | fraud_detector |   False alarm   (FP): 4,680
+2026-05-01 01:14:08 | INFO     | fraud_detector |   Correct clear (TN): 109,364
+2026-05-01 01:14:08 | INFO     | fraud_detector | 
+              precision    recall  f1-score   support
+
+           0     0.9877    0.9590    0.9731    114044
+           1     0.3665    0.6661    0.4728      4064
+
+    accuracy                         0.9489    118108
+   macro avg     0.6771    0.8125    0.7230    118108
+weighted avg     0.9664    0.9489    0.9559    118108
+
+2026-05-01 01:14:32 | INFO     | fraud_detector | 
+==================================================
+2026-05-01 01:14:32 | INFO     | fraud_detector | EVALUATION — LightGBM Tuned
+2026-05-01 01:14:32 | INFO     | fraud_detector |   AUC-ROC   : 0.9231  ← PRIMARY
+2026-05-01 01:14:32 | INFO     | fraud_detector |   AUC-PR    : 0.5567  ← SECONDARY
+2026-05-01 01:14:32 | INFO     | fraud_detector |   F1        : 0.4734
+2026-05-01 01:14:32 | INFO     | fraud_detector |   Precision : 0.3653
+2026-05-01 01:14:32 | INFO     | fraud_detector |   Recall    : 0.6722
+2026-05-01 01:14:32 | INFO     | fraud_detector |   Threshold : 0.500
+2026-05-01 01:14:32 | INFO     | fraud_detector | 
+  Confusion Matrix:
+[[109298   4746]
+ [  1332   2732]]
+2026-05-01 01:14:32 | INFO     | fraud_detector |   Fraud caught  (TP): 2,732
+2026-05-01 01:14:32 | INFO     | fraud_detector |   Fraud missed  (FN): 1,332
+2026-05-01 01:14:32 | INFO     | fraud_detector |   False alarm   (FP): 4,746
+2026-05-01 01:14:32 | INFO     | fraud_detector |   Correct clear (TN): 109,298
+2026-05-01 01:14:32 | INFO     | fraud_detector | 
+              precision    recall  f1-score   support
+
+           0     0.9880    0.9584    0.9729    114044
+           1     0.3653    0.6722    0.4734      4064
+
+    accuracy                         0.9485    118108
+   macro avg     0.6766    0.8153    0.7232    118108
+weighted avg     0.9665    0.9485    0.9558    118108
+
+2026-05-01 01:15:53 | INFO     | fraud_detector | 
+==================================================
+2026-05-01 01:15:53 | INFO     | fraud_detector | EVALUATION — CatBoost Tuned
+2026-05-01 01:15:53 | INFO     | fraud_detector |   AUC-ROC   : 0.9180  ← PRIMARY
+2026-05-01 01:15:53 | INFO     | fraud_detector |   AUC-PR    : 0.5244  ← SECONDARY
+2026-05-01 01:15:53 | INFO     | fraud_detector |   F1        : 0.3983
+2026-05-01 01:15:53 | INFO     | fraud_detector |   Precision : 0.2789
+2026-05-01 01:15:53 | INFO     | fraud_detector |   Recall    : 0.6966
+2026-05-01 01:15:53 | INFO     | fraud_detector |   Threshold : 0.500
+2026-05-01 01:15:53 | INFO     | fraud_detector | 
+  Confusion Matrix:
+[[106724   7320]
+ [  1233   2831]]
+2026-05-01 01:15:53 | INFO     | fraud_detector |   Fraud caught  (TP): 2,831
+2026-05-01 01:15:53 | INFO     | fraud_detector |   Fraud missed  (FN): 1,233
+2026-05-01 01:15:53 | INFO     | fraud_detector |   False alarm   (FP): 7,320
+2026-05-01 01:15:53 | INFO     | fraud_detector |   Correct clear (TN): 106,724
+2026-05-01 01:15:53 | INFO     | fraud_detector | 
+              precision    recall  f1-score   support
+
+           0     0.9886    0.9358    0.9615    114044
+           1     0.2789    0.6966    0.3983      4064
+
+    accuracy                         0.9276    118108
+   macro avg     0.6337    0.8162    0.6799    118108
+weighted avg     0.9642    0.9276    0.9421    118108
+
+2026-05-01 01:15:53 | INFO     | fraud_detector | 
+TUNED SUMMARY (by AUC-ROC):
+2026-05-01 01:15:53 | INFO     | fraud_detector |   xgb   AUC-ROC=0.9258 | AUC-PR=0.5637
+2026-05-01 01:15:53 | INFO     | fraud_detector |   lgb   AUC-ROC=0.9231 | AUC-PR=0.5567
+2026-05-01 01:15:53 | INFO     | fraud_detector |   cat   AUC-ROC=0.9180 | AUC-PR=0.5244
+2026-05-01 01:15:54 | INFO     | fraud_detector | ============================================================
+2026-05-01 01:15:54 | INFO     | fraud_detector | STEP 3: STACKING ENSEMBLE
+2026-05-01 01:15:54 | INFO     | fraud_detector |   CV method    : TimeSeriesSplit(n_splits=5)
+2026-05-01 01:15:54 | INFO     | fraud_detector |   Calibration  : isotonic (cv=prefit) per fold
+2026-05-01 01:15:54 | INFO     | fraud_detector |   Meta learner : LogisticRegression
+2026-05-01 01:15:54 | INFO     | fraud_detector | ============================================================
+2026-05-01 01:16:18 | INFO     | fraud_detector |   Fold 1/5 complete | OOF: 78,738 | Train: 78,742
+2026-05-01 01:16:54 | INFO     | fraud_detector |   Fold 2/5 complete | OOF: 78,738 | Train: 157,480
+2026-05-01 01:18:06 | INFO     | fraud_detector |   Fold 3/5 complete | OOF: 78,738 | Train: 236,218
+2026-05-01 01:19:29 | INFO     | fraud_detector |   Fold 4/5 complete | OOF: 78,738 | Train: 314,956
+2026-05-01 01:21:37 | INFO     | fraud_detector |   Fold 5/5 complete | OOF: 78,738 | Train: 393,694
+2026-05-01 01:21:37 | INFO     | fraud_detector | 
+  OOF prediction stats:
+2026-05-01 01:21:37 | INFO     | fraud_detector |     XGB: mean=0.0307 | std=0.1090
+2026-05-01 01:21:37 | INFO     | fraud_detector |     LGB: mean=0.0307 | std=0.1069
+2026-05-01 01:21:37 | INFO     | fraud_detector |     CAT: mean=0.0307 | std=0.1054
+2026-05-01 01:21:37 | INFO     | fraud_detector | 
+==================================================
+2026-05-01 01:21:37 | INFO     | fraud_detector | EVALUATION — Stacking Ensemble
+2026-05-01 01:21:37 | INFO     | fraud_detector |   AUC-ROC   : 0.8957  ← PRIMARY
+2026-05-01 01:21:37 | INFO     | fraud_detector |   AUC-PR    : 0.4791  ← SECONDARY
+2026-05-01 01:21:37 | INFO     | fraud_detector |   F1        : 0.4264
+2026-05-01 01:21:37 | INFO     | fraud_detector |   Precision : 0.7655
+2026-05-01 01:21:37 | INFO     | fraud_detector |   Recall    : 0.2955
+2026-05-01 01:21:37 | INFO     | fraud_detector |   Threshold : 0.500
+2026-05-01 01:21:37 | INFO     | fraud_detector | 
+  Confusion Matrix:
+[[113676    368]
+ [  2863   1201]]
+2026-05-01 01:21:37 | INFO     | fraud_detector |   Fraud caught  (TP): 1,201
+2026-05-01 01:21:37 | INFO     | fraud_detector |   Fraud missed  (FN): 2,863
+2026-05-01 01:21:37 | INFO     | fraud_detector |   False alarm   (FP): 368
+2026-05-01 01:21:37 | INFO     | fraud_detector |   Correct clear (TN): 113,676
+2026-05-01 01:21:37 | INFO     | fraud_detector | 
+              precision    recall  f1-score   support
+
+           0     0.9754    0.9968    0.9860    114044
+           1     0.7655    0.2955    0.4264      4064
+
+    accuracy                         0.9726    118108
+   macro avg     0.8704    0.6461    0.7062    118108
+weighted avg     0.9682    0.9726    0.9667    118108
+
+2026-05-01 01:21:37 | INFO     | fraud_detector |   Saved: stacking_meta.pkl
+2026-05-01 01:21:37 | INFO     | fraud_detector | ============================================================
+2026-05-01 01:21:37 | INFO     | fraud_detector | STEP 4: FINAL COMPARISON & BEST MODEL SELECTION
+2026-05-01 01:21:37 | INFO     | fraud_detector | ============================================================
+2026-05-01 01:21:37 | INFO     | fraud_detector | 
+FINAL LEADERBOARD (by AUC-ROC):
+2026-05-01 01:21:37 | INFO     | fraud_detector |   #1 tuned_xgb            AUC-ROC=0.9258 | AUC-PR=0.5637 | F1=0.4728
+2026-05-01 01:21:37 | INFO     | fraud_detector |   #2 tuned_lgb            AUC-ROC=0.9231 | AUC-PR=0.5567 | F1=0.4734
+2026-05-01 01:21:37 | INFO     | fraud_detector |   #3 tuned_cat            AUC-ROC=0.9180 | AUC-PR=0.5244 | F1=0.3983
+2026-05-01 01:21:37 | INFO     | fraud_detector |   #4 baseline_xgb         AUC-ROC=0.9169 | AUC-PR=0.5326 | F1=0.4348
+2026-05-01 01:21:37 | INFO     | fraud_detector |   #5 baseline_lgb         AUC-ROC=0.9140 | AUC-PR=0.5124 | F1=0.3641
+2026-05-01 01:21:37 | INFO     | fraud_detector |   #6 baseline_cat         AUC-ROC=0.9072 | AUC-PR=0.4803 | F1=0.3178
+2026-05-01 01:21:37 | INFO     | fraud_detector |   #7 stacking             AUC-ROC=0.8957 | AUC-PR=0.4791 | F1=0.4264
+2026-05-01 01:21:37 | INFO     | fraud_detector | 
+BEST MODEL: tuned_xgb
+2026-05-01 01:21:38 | INFO     | fraud_detector | 
+Optimizing threshold (Recall >= 0.70, max F1)...
+2026-05-01 01:21:39 | INFO     | fraud_detector |   Best threshold (recall>=0.7): 0.44 | F1: 0.4389
+2026-05-01 01:21:39 | INFO     | fraud_detector | 
+==================================================
+2026-05-01 01:21:39 | INFO     | fraud_detector | EVALUATION — BEST MODEL (tuned_xgb) — Optimized Threshold
+2026-05-01 01:21:39 | INFO     | fraud_detector |   AUC-ROC   : 0.9258  ← PRIMARY
+2026-05-01 01:21:39 | INFO     | fraud_detector |   AUC-PR    : 0.5637  ← SECONDARY
+2026-05-01 01:21:39 | INFO     | fraud_detector |   F1        : 0.4389
+2026-05-01 01:21:39 | INFO     | fraud_detector |   Precision : 0.3187
+2026-05-01 01:21:39 | INFO     | fraud_detector |   Recall    : 0.7050
+2026-05-01 01:21:39 | INFO     | fraud_detector |   Threshold : 0.440
+2026-05-01 01:21:39 | INFO     | fraud_detector | 
+  Confusion Matrix:
+[[107919   6125]
+ [  1199   2865]]
+2026-05-01 01:21:39 | INFO     | fraud_detector |   Fraud caught  (TP): 2,865
+2026-05-01 01:21:39 | INFO     | fraud_detector |   Fraud missed  (FN): 1,199
+2026-05-01 01:21:39 | INFO     | fraud_detector |   False alarm   (FP): 6,125
+2026-05-01 01:21:39 | INFO     | fraud_detector |   Correct clear (TN): 107,919
+2026-05-01 01:21:39 | INFO     | fraud_detector | 
+              precision    recall  f1-score   support
+
+           0     0.9890    0.9463    0.9672    114044
+           1     0.3187    0.7050    0.4389      4064
+
+    accuracy                         0.9380    118108
+   macro avg     0.6538    0.8256    0.7031    118108
+weighted avg     0.9659    0.9380    0.9490    118108
+
+2026-05-01 01:21:39 | INFO     | fraud_detector | 
+Saved:
+2026-05-01 01:21:39 | INFO     | fraud_detector |   outputs/models/fraud/fraud_model.pkl
+2026-05-01 01:21:39 | INFO     | fraud_detector |   outputs/models/fraud/fraud_model_metadata.json
+2026-05-01 01:21:39 | INFO     | fraud_detector | 
+Final AUC-ROC : 0.9258
+2026-05-01 01:21:39 | INFO     | fraud_detector | Final AUC-PR  : 0.5637
+2026-05-01 01:21:39 | INFO     | fraud_detector | ============================================================
+2026-05-01 01:21:39 | INFO     | fraud_detector | FRAUD DETECTOR COMPLETE
+2026-05-01 01:21:39 | INFO     | fraud_detector | ============================================================

@@ -1,0 +1,226 @@
+2026-04-26 20:08:30 | INFO     | shap_explainer | ============================================================
+2026-04-26 20:08:30 | INFO     | shap_explainer | SHAP FULL ANALYSIS — FRAUD
+2026-04-26 20:08:30 | INFO     | shap_explainer | ============================================================
+2026-04-26 20:08:30 | INFO     | shap_explainer | Creating TreeExplainer for CatBoostClassifier...
+2026-04-26 20:08:31 | INFO     | shap_explainer | Computing SHAP values on 2,000 samples...
+2026-04-26 20:08:39 | INFO     | shap_explainer |   SHAP values shape: (2000, 240)
+2026-04-26 20:08:39 | INFO     | shap_explainer | Global SHAP — Bar plot...
+2026-04-26 20:08:39 | INFO     | shap_explainer |   Saved: C:\Users\sharg\Desktop\github\FinRiskGuard\outputs\figures\fraud\shap\01_global_bar.png
+2026-04-26 20:08:39 | INFO     | shap_explainer | Global SHAP — Beeswarm plot...
+2026-04-26 20:08:39 | INFO     | shap_explainer |   Saved: C:\Users\sharg\Desktop\github\FinRiskGuard\outputs\figures\fraud\shap\02_global_beeswarm.png
+2026-04-26 20:08:39 | INFO     | shap_explainer | Global SHAP — Heatmap...
+2026-04-26 20:08:41 | INFO     | shap_explainer |   Saved: C:\Users\sharg\Desktop\github\FinRiskGuard\outputs\figures\fraud\shap\03_global_heatmap.png
+2026-04-26 20:08:41 | INFO     | shap_explainer | Local SHAP — Waterfall (idx=10, Fraud)...
+2026-04-26 20:08:42 | INFO     | shap_explainer |   Saved: C:\Users\sharg\Desktop\github\FinRiskGuard\outputs\figures\fraud\shap\04_local_waterfall_fraud_idx10.png
+2026-04-26 20:08:42 | INFO     | shap_explainer | Local SHAP — Force plot (idx=10, Fraud)...
+2026-04-26 20:08:42 | INFO     | shap_explainer |   Saved: C:\Users\sharg\Desktop\github\FinRiskGuard\outputs\figures\fraud\shap\05_local_force_fraud_idx10.png
+2026-04-26 20:08:42 | INFO     | shap_explainer | Local SHAP — Waterfall (idx=0, Non-Fraud)...
+2026-04-26 20:08:42 | INFO     | shap_explainer |   Saved: C:\Users\sharg\Desktop\github\FinRiskGuard\outputs\figures\fraud\shap\04_local_waterfall_non-fraud_idx0.png
+2026-04-26 20:08:42 | INFO     | shap_explainer | Top 3 features for dependence: ['C2', 'C13', 'card6']
+2026-04-26 20:08:42 | INFO     | shap_explainer | SHAP Dependence — C2 × C13...
+2026-04-26 20:08:42 | INFO     | shap_explainer |   Saved: C:\Users\sharg\Desktop\github\FinRiskGuard\outputs\figures\fraud\shap\06_dependence_C2.png
+2026-04-26 20:08:42 | INFO     | shap_explainer | SHAP Dependence — C13 × card6...
+2026-04-26 20:08:42 | INFO     | shap_explainer |   Saved: C:\Users\sharg\Desktop\github\FinRiskGuard\outputs\figures\fraud\shap\06_dependence_C13.png
+2026-04-26 20:08:42 | INFO     | shap_explainer | SHAP Dependence — card6 × None...
+2026-04-26 20:08:43 | INFO     | shap_explainer |   Saved: C:\Users\sharg\Desktop\github\FinRiskGuard\outputs\figures\fraud\shap\06_dependence_card6.png
+2026-04-26 20:08:43 | INFO     | shap_explainer | ============================================================
+2026-04-26 20:08:43 | INFO     | shap_explainer | SHAP COMPLETE — figures: outputs/figures/fraud/shap/
+2026-04-26 20:08:43 | INFO     | shap_explainer | ============================================================
+2026-04-26 20:08:52 | INFO     | shap_explainer | Creating TreeExplainer for CatBoostClassifier...
+2026-04-26 20:08:53 | INFO     | shap_explainer | 
+Single explanation (Fraud_case):
+2026-04-26 20:08:53 | INFO     | shap_explainer |   Base value (avg prediction) : 0.2274
+2026-04-26 20:08:53 | INFO     | shap_explainer |   SHAP prediction             : -0.6760
+2026-04-26 20:08:53 | INFO     | shap_explainer | 
+  Top 10 contributors:
+2026-04-26 20:08:53 | INFO     | shap_explainer |     C2                                  -0.8039  ↓ fraud
+2026-04-26 20:08:53 | INFO     | shap_explainer |     card2                               -0.4254  ↓ fraud
+2026-04-26 20:08:53 | INFO     | shap_explainer |     card6                               -0.3008  ↓ fraud
+2026-04-26 20:08:53 | INFO     | shap_explainer |     ProductCD                           +0.1719  ↑ fraud
+2026-04-26 20:08:53 | INFO     | shap_explainer |     TransactionAmt                      -0.1374  ↓ fraud
+2026-04-26 20:08:53 | INFO     | shap_explainer |     D3                                  +0.1349  ↑ fraud
+2026-04-26 20:08:53 | INFO     | shap_explainer |     FE_amt_log                          -0.1334  ↓ fraud
+2026-04-26 20:08:53 | INFO     | shap_explainer |     V258                                -0.1309  ↓ fraud
+2026-04-26 20:08:53 | INFO     | shap_explainer |     M4                                  +0.1271  ↑ fraud
+2026-04-26 20:08:53 | INFO     | shap_explainer |     id_17                               +0.1222  ↑ fraud
+2026-04-26 20:08:53 | INFO     | shap_explainer | Local SHAP — Waterfall (idx=0, Fraud_case)...
+2026-04-26 20:08:53 | INFO     | shap_explainer |   Saved: C:\Users\sharg\Desktop\github\FinRiskGuard\outputs\figures\fraud\shap\04_local_waterfall_fraud_case_idx0.png
+2026-04-26 20:27:57 | INFO     | shap_explainer | Creating TreeExplainer for CatBoostClassifier...
+2026-04-26 20:27:58 | INFO     | shap_explainer | 
+Single explanation (Fraud_case):
+2026-04-26 20:27:58 | INFO     | shap_explainer |   Base value (avg prediction) : 0.2274
+2026-04-26 20:27:58 | INFO     | shap_explainer |   SHAP prediction             : -0.6760
+2026-04-26 20:27:58 | INFO     | shap_explainer | 
+  Top 10 contributors:
+2026-04-26 20:27:58 | INFO     | shap_explainer |     C2                                  -0.8039  ↓ fraud
+2026-04-26 20:27:58 | INFO     | shap_explainer |     card2                               -0.4254  ↓ fraud
+2026-04-26 20:27:58 | INFO     | shap_explainer |     card6                               -0.3008  ↓ fraud
+2026-04-26 20:27:58 | INFO     | shap_explainer |     ProductCD                           +0.1719  ↑ fraud
+2026-04-26 20:27:58 | INFO     | shap_explainer |     TransactionAmt                      -0.1374  ↓ fraud
+2026-04-26 20:27:58 | INFO     | shap_explainer |     D3                                  +0.1349  ↑ fraud
+2026-04-26 20:27:58 | INFO     | shap_explainer |     FE_amt_log                          -0.1334  ↓ fraud
+2026-04-26 20:27:58 | INFO     | shap_explainer |     V258                                -0.1309  ↓ fraud
+2026-04-26 20:27:58 | INFO     | shap_explainer |     M4                                  +0.1271  ↑ fraud
+2026-04-26 20:27:58 | INFO     | shap_explainer |     id_17                               +0.1222  ↑ fraud
+2026-04-26 20:27:58 | INFO     | shap_explainer | Local SHAP — Waterfall (idx=0, Fraud_case)...
+2026-04-26 20:27:58 | INFO     | shap_explainer |   Saved: C:\Users\sharg\Desktop\github\FinRiskGuard\outputs\figures\fraud\shap\04_local_waterfall_fraud_case_idx0.png
+2026-04-26 20:31:51 | INFO     | shap_explainer | Creating TreeExplainer for CatBoostClassifier...
+2026-04-26 20:31:52 | INFO     | shap_explainer | 
+Single explanation (Fraud_case):
+2026-04-26 20:31:52 | INFO     | shap_explainer |   Base value (avg prediction) : 0.2274
+2026-04-26 20:31:52 | INFO     | shap_explainer |   SHAP prediction             : -0.6760
+2026-04-26 20:31:52 | INFO     | shap_explainer | 
+  Top 10 contributors:
+2026-04-26 20:31:52 | INFO     | shap_explainer |     C2                                  -0.8039  ↓ fraud
+2026-04-26 20:31:52 | INFO     | shap_explainer |     card2                               -0.4254  ↓ fraud
+2026-04-26 20:31:52 | INFO     | shap_explainer |     card6                               -0.3008  ↓ fraud
+2026-04-26 20:31:52 | INFO     | shap_explainer |     ProductCD                           +0.1719  ↑ fraud
+2026-04-26 20:31:52 | INFO     | shap_explainer |     TransactionAmt                      -0.1374  ↓ fraud
+2026-04-26 20:31:52 | INFO     | shap_explainer |     D3                                  +0.1349  ↑ fraud
+2026-04-26 20:31:52 | INFO     | shap_explainer |     FE_amt_log                          -0.1334  ↓ fraud
+2026-04-26 20:31:52 | INFO     | shap_explainer |     V258                                -0.1309  ↓ fraud
+2026-04-26 20:31:52 | INFO     | shap_explainer |     M4                                  +0.1271  ↑ fraud
+2026-04-26 20:31:52 | INFO     | shap_explainer |     id_17                               +0.1222  ↑ fraud
+2026-04-26 20:31:52 | INFO     | shap_explainer | Local SHAP — Waterfall (idx=0, Fraud_case)...
+2026-04-26 20:31:52 | INFO     | shap_explainer |   Saved: C:\Users\sharg\Desktop\github\FinRiskGuard\outputs\figures\fraud\shap\04_local_waterfall_fraud_case_idx0.png
+2026-04-26 20:34:45 | INFO     | shap_explainer | ============================================================
+2026-04-26 20:34:45 | INFO     | shap_explainer | SHAP FULL ANALYSIS — FRAUD
+2026-04-26 20:34:45 | INFO     | shap_explainer | ============================================================
+2026-04-26 20:34:45 | INFO     | shap_explainer | Creating TreeExplainer for CatBoostClassifier...
+2026-04-26 20:34:46 | INFO     | shap_explainer | Computing SHAP values on 2,000 samples...
+2026-04-26 20:34:53 | INFO     | shap_explainer |   SHAP values shape: (2000, 240)
+2026-04-26 20:34:53 | INFO     | shap_explainer | Global SHAP — Bar plot...
+2026-04-26 20:34:54 | INFO     | shap_explainer |   Saved: C:\Users\sharg\Desktop\github\FinRiskGuard\outputs\figures\fraud\shap\01_global_bar.png
+2026-04-26 20:34:54 | INFO     | shap_explainer | Global SHAP — Beeswarm plot...
+2026-04-26 20:34:54 | INFO     | shap_explainer |   Saved: C:\Users\sharg\Desktop\github\FinRiskGuard\outputs\figures\fraud\shap\02_global_beeswarm.png
+2026-04-26 20:34:54 | INFO     | shap_explainer | Global SHAP — Heatmap...
+2026-04-26 20:34:56 | INFO     | shap_explainer |   Saved: C:\Users\sharg\Desktop\github\FinRiskGuard\outputs\figures\fraud\shap\03_global_heatmap.png
+2026-04-26 20:34:56 | INFO     | shap_explainer | Local SHAP — Waterfall (idx=10, Fraud)...
+2026-04-26 20:34:56 | INFO     | shap_explainer |   Saved: C:\Users\sharg\Desktop\github\FinRiskGuard\outputs\figures\fraud\shap\04_local_waterfall_fraud_idx10.png
+2026-04-26 20:34:56 | INFO     | shap_explainer | Local SHAP — Force plot (idx=10, Fraud)...
+2026-04-26 20:34:56 | INFO     | shap_explainer |   Saved: C:\Users\sharg\Desktop\github\FinRiskGuard\outputs\figures\fraud\shap\05_local_force_fraud_idx10.png
+2026-04-26 20:34:56 | INFO     | shap_explainer | Local SHAP — Waterfall (idx=0, Non-Fraud)...
+2026-04-26 20:34:57 | INFO     | shap_explainer |   Saved: C:\Users\sharg\Desktop\github\FinRiskGuard\outputs\figures\fraud\shap\04_local_waterfall_non-fraud_idx0.png
+2026-04-26 20:34:57 | INFO     | shap_explainer | Top 3 features for dependence: ['C2', 'C13', 'card6']
+2026-04-26 20:34:57 | INFO     | shap_explainer | SHAP Dependence — C2 × C13...
+2026-04-26 20:34:57 | INFO     | shap_explainer |   Saved: C:\Users\sharg\Desktop\github\FinRiskGuard\outputs\figures\fraud\shap\06_dependence_C2.png
+2026-04-26 20:34:57 | INFO     | shap_explainer | SHAP Dependence — C13 × card6...
+2026-04-26 20:34:57 | INFO     | shap_explainer |   Saved: C:\Users\sharg\Desktop\github\FinRiskGuard\outputs\figures\fraud\shap\06_dependence_C13.png
+2026-04-26 20:34:57 | INFO     | shap_explainer | SHAP Dependence — card6 × None...
+2026-04-26 20:34:57 | INFO     | shap_explainer |   Saved: C:\Users\sharg\Desktop\github\FinRiskGuard\outputs\figures\fraud\shap\06_dependence_card6.png
+2026-04-26 20:34:57 | INFO     | shap_explainer | ============================================================
+2026-04-26 20:34:57 | INFO     | shap_explainer | SHAP COMPLETE — figures: outputs/figures/fraud/shap/
+2026-04-26 20:34:57 | INFO     | shap_explainer | ============================================================
+2026-04-26 20:35:07 | INFO     | shap_explainer | Creating TreeExplainer for CatBoostClassifier...
+2026-04-26 20:35:08 | INFO     | shap_explainer | 
+Single explanation (Fraud_case):
+2026-04-26 20:35:08 | INFO     | shap_explainer |   Base value (avg prediction) : 0.2274
+2026-04-26 20:35:08 | INFO     | shap_explainer |   SHAP prediction             : -0.6760
+2026-04-26 20:35:08 | INFO     | shap_explainer | 
+  Top 10 contributors:
+2026-04-26 20:35:08 | INFO     | shap_explainer |     C2                                  -0.8039  ↓ fraud
+2026-04-26 20:35:08 | INFO     | shap_explainer |     card2                               -0.4254  ↓ fraud
+2026-04-26 20:35:08 | INFO     | shap_explainer |     card6                               -0.3008  ↓ fraud
+2026-04-26 20:35:08 | INFO     | shap_explainer |     ProductCD                           +0.1719  ↑ fraud
+2026-04-26 20:35:08 | INFO     | shap_explainer |     TransactionAmt                      -0.1374  ↓ fraud
+2026-04-26 20:35:08 | INFO     | shap_explainer |     D3                                  +0.1349  ↑ fraud
+2026-04-26 20:35:08 | INFO     | shap_explainer |     FE_amt_log                          -0.1334  ↓ fraud
+2026-04-26 20:35:08 | INFO     | shap_explainer |     V258                                -0.1309  ↓ fraud
+2026-04-26 20:35:08 | INFO     | shap_explainer |     M4                                  +0.1271  ↑ fraud
+2026-04-26 20:35:08 | INFO     | shap_explainer |     id_17                               +0.1222  ↑ fraud
+2026-04-26 20:35:08 | INFO     | shap_explainer | Local SHAP — Waterfall (idx=0, Fraud_case)...
+2026-04-26 20:35:08 | INFO     | shap_explainer |   Saved: C:\Users\sharg\Desktop\github\FinRiskGuard\outputs\figures\fraud\shap\04_local_waterfall_fraud_case_idx0.png
+2026-04-26 20:36:44 | INFO     | shap_explainer | ============================================================
+2026-04-26 20:36:44 | INFO     | shap_explainer | SHAP FULL ANALYSIS — FRAUD
+2026-04-26 20:36:44 | INFO     | shap_explainer | ============================================================
+2026-04-26 20:36:44 | INFO     | shap_explainer | Creating TreeExplainer for CatBoostClassifier...
+2026-04-26 20:36:45 | INFO     | shap_explainer | Computing SHAP values on 2,000 samples...
+2026-04-26 20:36:52 | INFO     | shap_explainer |   SHAP values shape: (2000, 240)
+2026-04-26 20:36:52 | INFO     | shap_explainer | Global SHAP — Bar plot...
+2026-04-26 20:36:52 | INFO     | shap_explainer |   Saved: C:\Users\sharg\Desktop\github\FinRiskGuard\outputs\figures\fraud\shap\01_global_bar.png
+2026-04-26 20:36:52 | INFO     | shap_explainer | Global SHAP — Beeswarm plot...
+2026-04-26 20:36:53 | INFO     | shap_explainer |   Saved: C:\Users\sharg\Desktop\github\FinRiskGuard\outputs\figures\fraud\shap\02_global_beeswarm.png
+2026-04-26 20:36:53 | INFO     | shap_explainer | Global SHAP — Heatmap...
+2026-04-26 20:36:55 | INFO     | shap_explainer |   Saved: C:\Users\sharg\Desktop\github\FinRiskGuard\outputs\figures\fraud\shap\03_global_heatmap.png
+2026-04-26 20:36:55 | INFO     | shap_explainer | Local SHAP — Waterfall (idx=10, Fraud)...
+2026-04-26 20:36:55 | INFO     | shap_explainer |   Saved: C:\Users\sharg\Desktop\github\FinRiskGuard\outputs\figures\fraud\shap\04_local_waterfall_fraud_idx10.png
+2026-04-26 20:36:55 | INFO     | shap_explainer | Local SHAP — Force plot (idx=10, Fraud)...
+2026-04-26 20:36:55 | INFO     | shap_explainer |   Saved: C:\Users\sharg\Desktop\github\FinRiskGuard\outputs\figures\fraud\shap\05_local_force_fraud_idx10.png
+2026-04-26 20:36:55 | INFO     | shap_explainer | Local SHAP — Waterfall (idx=0, Non-Fraud)...
+2026-04-26 20:36:56 | INFO     | shap_explainer |   Saved: C:\Users\sharg\Desktop\github\FinRiskGuard\outputs\figures\fraud\shap\04_local_waterfall_non-fraud_idx0.png
+2026-04-26 20:36:56 | INFO     | shap_explainer | Top 3 features for dependence: ['C2', 'C13', 'card6']
+2026-04-26 20:36:56 | INFO     | shap_explainer | SHAP Dependence — C2 × C13...
+2026-04-26 20:36:56 | INFO     | shap_explainer |   Saved: C:\Users\sharg\Desktop\github\FinRiskGuard\outputs\figures\fraud\shap\06_dependence_C2.png
+2026-04-26 20:36:56 | INFO     | shap_explainer | SHAP Dependence — C13 × card6...
+2026-04-26 20:36:56 | INFO     | shap_explainer |   Saved: C:\Users\sharg\Desktop\github\FinRiskGuard\outputs\figures\fraud\shap\06_dependence_C13.png
+2026-04-26 20:36:56 | INFO     | shap_explainer | SHAP Dependence — card6 × None...
+2026-04-26 20:36:56 | INFO     | shap_explainer |   Saved: C:\Users\sharg\Desktop\github\FinRiskGuard\outputs\figures\fraud\shap\06_dependence_card6.png
+2026-04-26 20:36:56 | INFO     | shap_explainer | ============================================================
+2026-04-26 20:36:56 | INFO     | shap_explainer | SHAP COMPLETE — figures: outputs/figures/fraud/shap/
+2026-04-26 20:36:56 | INFO     | shap_explainer | ============================================================
+2026-04-26 20:37:06 | INFO     | shap_explainer | Creating TreeExplainer for CatBoostClassifier...
+2026-04-26 20:37:08 | INFO     | shap_explainer | 
+Single explanation (Fraud_case):
+2026-04-26 20:37:08 | INFO     | shap_explainer |   Base value (avg prediction) : 0.2274
+2026-04-26 20:37:08 | INFO     | shap_explainer |   SHAP prediction             : -0.6760
+2026-04-26 20:37:08 | INFO     | shap_explainer | 
+  Top 10 contributors:
+2026-04-26 20:37:08 | INFO     | shap_explainer |     C2                                  -0.8039  ↓ fraud
+2026-04-26 20:37:08 | INFO     | shap_explainer |     card2                               -0.4254  ↓ fraud
+2026-04-26 20:37:08 | INFO     | shap_explainer |     card6                               -0.3008  ↓ fraud
+2026-04-26 20:37:08 | INFO     | shap_explainer |     ProductCD                           +0.1719  ↑ fraud
+2026-04-26 20:37:08 | INFO     | shap_explainer |     TransactionAmt                      -0.1374  ↓ fraud
+2026-04-26 20:37:08 | INFO     | shap_explainer |     D3                                  +0.1349  ↑ fraud
+2026-04-26 20:37:08 | INFO     | shap_explainer |     FE_amt_log                          -0.1334  ↓ fraud
+2026-04-26 20:37:08 | INFO     | shap_explainer |     V258                                -0.1309  ↓ fraud
+2026-04-26 20:37:08 | INFO     | shap_explainer |     M4                                  +0.1271  ↑ fraud
+2026-04-26 20:37:08 | INFO     | shap_explainer |     id_17                               +0.1222  ↑ fraud
+2026-04-26 20:37:08 | INFO     | shap_explainer | Local SHAP — Waterfall (idx=0, Fraud_case)...
+2026-04-26 20:37:08 | INFO     | shap_explainer |   Saved: C:\Users\sharg\Desktop\github\FinRiskGuard\outputs\figures\fraud\shap\04_local_waterfall_fraud_case_idx0.png
+2026-04-26 22:55:33 | INFO     | shap_explainer | ============================================================
+2026-04-26 22:55:33 | INFO     | shap_explainer | SHAP FULL ANALYSIS — CREDIT
+2026-04-26 22:55:33 | INFO     | shap_explainer | ============================================================
+2026-04-26 22:55:33 | INFO     | shap_explainer | Creating TreeExplainer for XGBClassifier...
+2026-04-26 22:55:33 | INFO     | shap_explainer | Computing SHAP values on 2,000 samples...
+2026-04-26 22:55:33 | INFO     | shap_explainer |   SHAP values shape: (2000, 93)
+2026-04-26 22:55:33 | INFO     | shap_explainer | Global SHAP — Bar plot...
+2026-04-26 22:55:34 | INFO     | shap_explainer |   Saved: C:\Users\sharg\Desktop\github\FinRiskGuard\outputs\figures\credit\shap\01_global_bar.png
+2026-04-26 22:55:34 | INFO     | shap_explainer | Global SHAP — Beeswarm plot...
+2026-04-26 22:55:36 | INFO     | shap_explainer |   Saved: C:\Users\sharg\Desktop\github\FinRiskGuard\outputs\figures\credit\shap\02_global_beeswarm.png
+2026-04-26 22:55:36 | INFO     | shap_explainer | Global SHAP — Heatmap...
+2026-04-26 22:55:52 | INFO     | shap_explainer |   Saved: C:\Users\sharg\Desktop\github\FinRiskGuard\outputs\figures\credit\shap\03_global_heatmap.png
+2026-04-26 22:55:52 | INFO     | shap_explainer | Local SHAP — Waterfall (idx=3, Fraud)...
+2026-04-26 22:55:53 | INFO     | shap_explainer |   Saved: C:\Users\sharg\Desktop\github\FinRiskGuard\outputs\figures\credit\shap\04_local_waterfall_fraud_idx3.png
+2026-04-26 22:55:53 | INFO     | shap_explainer | Local SHAP — Force plot (idx=3, Fraud)...
+2026-04-26 22:55:54 | INFO     | shap_explainer |   Saved: C:\Users\sharg\Desktop\github\FinRiskGuard\outputs\figures\credit\shap\05_local_force_fraud_idx3.png
+2026-04-26 22:55:54 | INFO     | shap_explainer | Local SHAP — Waterfall (idx=0, Non-Fraud)...
+2026-04-26 22:55:55 | INFO     | shap_explainer |   Saved: C:\Users\sharg\Desktop\github\FinRiskGuard\outputs\figures\credit\shap\04_local_waterfall_non-fraud_idx0.png
+2026-04-26 22:55:55 | INFO     | shap_explainer | Top 3 features for dependence: ['FE_ext_mean', 'FE_prev_credit_sum', 'FE_annuity_credit_ratio']
+2026-04-26 22:55:55 | INFO     | shap_explainer | SHAP Dependence — FE_ext_mean × FE_prev_credit_sum...
+2026-04-26 22:55:56 | INFO     | shap_explainer |   Saved: C:\Users\sharg\Desktop\github\FinRiskGuard\outputs\figures\credit\shap\06_dependence_FE_ext_mean.png
+2026-04-26 22:55:56 | INFO     | shap_explainer | SHAP Dependence — FE_prev_credit_sum × FE_annuity_credit_ratio...
+2026-04-26 22:55:56 | INFO     | shap_explainer |   Saved: C:\Users\sharg\Desktop\github\FinRiskGuard\outputs\figures\credit\shap\06_dependence_FE_prev_credit_sum.png
+2026-04-26 22:55:56 | INFO     | shap_explainer | SHAP Dependence — FE_annuity_credit_ratio × None...
+2026-04-26 22:55:56 | INFO     | shap_explainer |   Saved: C:\Users\sharg\Desktop\github\FinRiskGuard\outputs\figures\credit\shap\06_dependence_FE_annuity_credit_ratio.png
+2026-04-26 22:55:56 | INFO     | shap_explainer | ============================================================
+2026-04-26 22:55:56 | INFO     | shap_explainer | SHAP COMPLETE — figures: outputs/figures/credit/shap/
+2026-04-26 22:55:56 | INFO     | shap_explainer | ============================================================
+2026-04-26 22:55:56 | INFO     | shap_explainer | Creating TreeExplainer for XGBClassifier...
+2026-04-26 22:55:57 | INFO     | shap_explainer | 
+Single explanation (Default_case):
+2026-04-26 22:55:57 | INFO     | shap_explainer |   Base value (avg prediction) : 0.0294
+2026-04-26 22:55:57 | INFO     | shap_explainer |   SHAP prediction             : 0.1896
+2026-04-26 22:55:57 | INFO     | shap_explainer | 
+  Top 10 contributors:
+2026-04-26 22:55:57 | INFO     | shap_explainer |     FE_bureau_active_count              +0.2660  ↑ fraud
+2026-04-26 22:55:57 | INFO     | shap_explainer |     FE_prev_credit_sum                  +0.2478  ↑ fraud
+2026-04-26 22:55:57 | INFO     | shap_explainer |     FE_bureau_closed_count              -0.2230  ↓ fraud
+2026-04-26 22:55:57 | INFO     | shap_explainer |     FE_ext_mean                         +0.1760  ↑ fraud
+2026-04-26 22:55:57 | INFO     | shap_explainer |     FE_prev_annuity_mean                -0.1368  ↓ fraud
+2026-04-26 22:55:57 | INFO     | shap_explainer |     AMT_ANNUITY                         -0.1313  ↓ fraud
+2026-04-26 22:55:57 | INFO     | shap_explainer |     FLAG_DOCUMENT_3                     -0.1047  ↓ fraud
+2026-04-26 22:55:57 | INFO     | shap_explainer |     FE_annuity_credit_ratio             +0.1039  ↑ fraud
+2026-04-26 22:55:57 | INFO     | shap_explainer |     FE_prev_approved_rate               +0.1003  ↑ fraud
+2026-04-26 22:55:57 | INFO     | shap_explainer |     FE_pos_months_balance_mean          +0.0950  ↑ fraud
+2026-04-26 22:55:57 | INFO     | shap_explainer | Local SHAP — Waterfall (idx=0, Default_case)...
+2026-04-26 22:55:58 | INFO     | shap_explainer |   Saved: C:\Users\sharg\Desktop\github\FinRiskGuard\outputs\figures\credit\shap\04_local_waterfall_default_case_idx0.png

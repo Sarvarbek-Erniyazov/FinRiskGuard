@@ -1,0 +1,86 @@
+2026-05-01 15:21:52 | INFO     | home_credit.feature_selector | ==================================================
+2026-05-01 15:21:52 | INFO     | home_credit.feature_selector | FEATURE SELECTION — target=TARGET
+2026-05-01 15:21:52 | INFO     | home_credit.feature_selector | Input shape: (246008, 184)
+2026-05-01 15:21:52 | INFO     | home_credit.feature_selector | Correlation filter: threshold=0.95
+2026-05-01 15:22:02 | INFO     | home_credit.feature_selector |   Dropped 30 correlated features: ['AMT_GOODS_PRICE', 'REGION_RATING_CLIENT_W_CITY', 'APARTMENTS_MODE', 'BASEMENTAREA_MODE', 'YEARS_BEGINEXPLUATATION_MODE']...
+2026-05-01 15:22:02 | INFO     | home_credit.feature_selector |   Remaining features: 154
+2026-05-01 15:22:03 | INFO     | home_credit.feature_selector | Mutual Information selection: top_k=60
+2026-05-01 15:24:10 | INFO     | home_credit.feature_selector |   Top 5 MI features: ['FLAG_CONT_MOBILE', 'FE_cc_count', 'FE_bureau_dpd_mean', 'FE_bureau_dpd_max', 'FE_cc_dpd_mean']
+2026-05-01 15:24:10 | INFO     | home_credit.feature_selector |   Selected 60 features
+2026-05-01 15:24:10 | INFO     | home_credit.feature_selector | XGBoost importance selection: top_k=60
+2026-05-01 15:24:12 | INFO     | home_credit.feature_selector |   Top 5 XGB features: ['FE_ext_mean', 'FE_ext23_prod', 'CODE_GENDER', 'NAME_EDUCATION_TYPE', 'EXT_SOURCE_1_isnan']
+2026-05-01 15:24:12 | INFO     | home_credit.feature_selector |   Selected 60 features
+2026-05-01 15:24:12 | INFO     | home_credit.feature_selector | Combined selection mode: union
+2026-05-01 15:24:12 | INFO     | home_credit.feature_selector |   MI selected    : 60
+2026-05-01 15:24:12 | INFO     | home_credit.feature_selector |   XGB selected   : 60
+2026-05-01 15:24:12 | INFO     | home_credit.feature_selector |   Final selected : 93
+2026-05-01 15:24:12 | INFO     | home_credit.feature_selector | 
+Top 20 features by average rank:
+2026-05-01 15:24:12 | INFO     | home_credit.feature_selector | 
+                             MI_score  XGB_importance  MI_rank  XGB_rank  avg_rank  selected
+FLAG_DOCUMENT_3              0.044945        0.013206      6.0       8.0       7.0      True
+EXT_SOURCE_1_isnan           0.038090        0.017191     11.0       5.0       8.0      True
+FE_cc_utilization            0.038202        0.011781     10.0       9.0       9.5      True
+NAME_EDUCATION_TYPE          0.031776        0.018046     16.0       4.0      10.0      True
+FE_ext_mean                  0.023631        0.075074     20.0       1.0      10.5      True
+FE_ext23_prod                0.020827        0.038181     27.0       2.0      14.5      True
+FE_NAME_EDUCATION_TYPE_freq  0.030746        0.010586     17.0      14.0      15.5      True
+CODE_GENDER                  0.017337        0.018144     33.0       3.0      18.0      True
+FE_ext13_prod                0.018076        0.010731     32.0      12.0      22.0      True
+NAME_INCOME_TYPE             0.023570        0.008632     21.0      24.0      22.5      True
+FE_NAME_FAMILY_STATUS_freq   0.033772        0.008104     15.0      30.0      22.5      True
+FE_annuity_credit_ratio      0.018881        0.010240     30.0      16.0      23.0      True
+FE_NAME_INCOME_TYPE_freq     0.021370        0.008969     26.0      22.0      24.0      True
+FE_ext_max                   0.016403        0.010500     35.0      15.0      25.0      True
+FLAG_OWN_CAR                 0.015491        0.010722     38.0      13.0      25.5      True
+OWN_CAR_AGE                  0.022382        0.007920     22.0      31.0      26.5      True
+FE_ext_min                   0.021637        0.007365     25.0      36.0      30.5      True
+FE_credit_goods_ratio        0.007900        0.010992     50.0      11.0      30.5      True
+REGION_RATING_CLIENT         0.021949        0.006712     24.0      43.0      33.5      True
+FE_cc_count                  0.047256        0.005828      2.0      67.0      34.5      True
+2026-05-01 15:24:12 | INFO     | home_credit.feature_selector | Final selected features: 93
+2026-05-01 15:24:12 | INFO     | home_credit.feature_selector | FEATURE SELECTION COMPLETE
+2026-05-01 15:24:12 | INFO     | home_credit.feature_selector | ==================================================
+2026-05-01 20:40:08 | INFO     | home_credit.feature_selector | ==================================================
+2026-05-01 20:40:08 | INFO     | home_credit.feature_selector | FEATURE SELECTION — target=TARGET
+2026-05-01 20:40:08 | INFO     | home_credit.feature_selector | Input shape: (246008, 195)
+2026-05-01 20:40:08 | INFO     | home_credit.feature_selector | Correlation filter: threshold=0.95
+2026-05-01 20:40:19 | INFO     | home_credit.feature_selector |   Dropped 30 correlated features: ['AMT_GOODS_PRICE', 'REGION_RATING_CLIENT_W_CITY', 'APARTMENTS_MODE', 'BASEMENTAREA_MODE', 'YEARS_BEGINEXPLUATATION_MODE']...
+2026-05-01 20:40:19 | INFO     | home_credit.feature_selector |   Remaining features: 165
+2026-05-01 20:40:19 | INFO     | home_credit.feature_selector | Mutual Information selection: top_k=70
+2026-05-01 20:43:38 | INFO     | home_credit.feature_selector |   Top 5 MI features: ['FLAG_CONT_MOBILE', 'FE_cc_count', 'FE_bureau_C_ratio', 'FE_cc_dpd_mean', 'FLAG_OWN_REALTY']
+2026-05-01 20:43:38 | INFO     | home_credit.feature_selector |   Selected 70 features
+2026-05-01 20:43:38 | INFO     | home_credit.feature_selector | XGBoost importance selection: top_k=70
+2026-05-01 20:43:40 | INFO     | home_credit.feature_selector |   Top 5 XGB features: ['FE_ext_mean', 'FE_ext23_prod', 'FE_ext_min', 'NAME_EDUCATION_TYPE', 'CODE_GENDER']
+2026-05-01 20:43:40 | INFO     | home_credit.feature_selector |   Selected 70 features
+2026-05-01 20:43:40 | INFO     | home_credit.feature_selector | Combined selection mode: union
+2026-05-01 20:43:40 | INFO     | home_credit.feature_selector |   MI selected    : 70
+2026-05-01 20:43:40 | INFO     | home_credit.feature_selector |   XGB selected   : 70
+2026-05-01 20:43:40 | INFO     | home_credit.feature_selector |   Final selected : 105
+2026-05-01 20:43:40 | INFO     | home_credit.feature_selector | 
+Top 20 features by average rank:
+2026-05-01 20:43:40 | INFO     | home_credit.feature_selector | 
+                             MI_score  XGB_importance  MI_rank  XGB_rank  avg_rank  selected
+FLAG_DOCUMENT_3              0.045057        0.011817      9.0      10.0       9.5      True
+EXT_SOURCE_1_isnan           0.039109        0.013474     14.0       8.0      11.0      True
+FE_cc_utilization            0.039907        0.011759     13.0      11.0      12.0      True
+NAME_EDUCATION_TYPE          0.031484        0.017741     20.0       4.0      12.0      True
+FE_ext_mean                  0.023634        0.061372     23.0       1.0      12.0      True
+FE_ext_min                   0.022034        0.019960     26.0       3.0      14.5      True
+FE_ext23_prod                0.020876        0.038843     29.0       2.0      15.5      True
+CODE_GENDER                  0.017207        0.017185     37.0       5.0      21.0      True
+FE_ext_max                   0.016942        0.016962     38.0       6.0      22.0      True
+FE_NAME_FAMILY_STATUS_freq   0.033953        0.007758     18.0      27.0      22.5      True
+FE_ext13_prod                0.018542        0.010404     34.0      14.0      24.0      True
+FE_annuity_credit_ratio      0.019278        0.009744     33.0      16.0      24.5      True
+FE_NAME_EDUCATION_TYPE_freq  0.031741        0.007093     19.0      32.0      25.5      True
+REGION_RATING_CLIENT         0.021621        0.008287     27.0      24.0      25.5      True
+FLAG_OWN_CAR                 0.015862        0.010880     39.0      13.0      26.0      True
+OWN_CAR_AGE                  0.022978        0.007263     25.0      30.0      27.5      True
+FE_cc_count                  0.046406        0.005680      2.0      61.0      31.5      True
+FE_credit_goods_ratio        0.006309        0.010365     59.0      15.0      37.0      True
+FE_bureau_C_ratio            0.045981        0.005310      3.0      75.0      39.0      True
+NAME_INCOME_TYPE             0.023539        0.005843     24.0      55.0      39.5      True
+2026-05-01 20:43:40 | INFO     | home_credit.feature_selector | Final selected features: 105
+2026-05-01 20:43:40 | INFO     | home_credit.feature_selector | FEATURE SELECTION COMPLETE
+2026-05-01 20:43:40 | INFO     | home_credit.feature_selector | ==================================================

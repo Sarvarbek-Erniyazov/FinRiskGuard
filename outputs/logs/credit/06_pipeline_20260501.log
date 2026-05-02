@@ -1,0 +1,63 @@
+2026-05-01 15:16:53 | INFO     | credit_pipeline | ============================================================
+2026-05-01 15:16:53 | INFO     | credit_pipeline | FINRISKGUARD — CREDIT PIPELINE (Home Credit)
+2026-05-01 15:16:53 | INFO     | credit_pipeline | Stage: all
+2026-05-01 15:16:53 | INFO     | credit_pipeline | ============================================================
+2026-05-01 15:16:53 | INFO     | credit_pipeline | STAGE 1: Loading Home Credit data
+2026-05-01 15:16:55 | INFO     | credit_pipeline | Loading supplementary tables...
+2026-05-01 15:17:18 | INFO     | credit_pipeline | STAGE 2: Stratified split
+2026-05-01 15:17:18 | INFO     | credit_pipeline | STAGE 3: Preprocessing
+2026-05-01 15:17:20 | INFO     | credit_pipeline |   Saved: prep_artifacts.pkl
+2026-05-01 15:17:20 | INFO     | credit_pipeline |   Train shape : (246008, 117)
+2026-05-01 15:17:20 | INFO     | credit_pipeline |   Val shape   : (61503, 117)
+2026-05-01 15:17:20 | INFO     | credit_pipeline |   Test shape  : (48744, 116)
+2026-05-01 15:17:20 | INFO     | credit_pipeline | STAGE 4: Feature Engineering
+2026-05-01 15:21:52 | INFO     | credit_pipeline |   Saved: fe_artifacts.pkl
+2026-05-01 15:21:52 | INFO     | credit_pipeline |   Train shape : (246008, 184)
+2026-05-01 15:21:52 | INFO     | credit_pipeline |   Val shape   : (61503, 184)
+2026-05-01 15:21:52 | INFO     | credit_pipeline |   Test shape  : (48744, 183)
+2026-05-01 15:21:52 | INFO     | credit_pipeline | STAGE 5: Credit Feature Selection
+2026-05-01 15:24:12 | INFO     | credit_pipeline |   Saved: feature_selection_report.csv, fs_artifacts.pkl
+2026-05-01 15:24:14 | INFO     | credit_pipeline |   Saved: train/val/test_credit_features.parquet
+2026-05-01 15:24:14 | INFO     | credit_pipeline |   Train : (246008, 95)
+2026-05-01 15:24:14 | INFO     | credit_pipeline |   Val   : (61503, 95)
+2026-05-01 15:24:14 | INFO     | credit_pipeline |   Test  : (48744, 94)
+2026-05-01 15:24:14 | INFO     | credit_pipeline | ============================================================
+2026-05-01 15:24:14 | INFO     | credit_pipeline | CREDIT PIPELINE COMPLETE
+2026-05-01 15:24:14 | INFO     | credit_pipeline | Train : (246008, 95)
+2026-05-01 15:24:14 | INFO     | credit_pipeline | Val   : (61503, 95)
+2026-05-01 15:24:14 | INFO     | credit_pipeline | Test  : (48744, 94)
+2026-05-01 15:24:14 | INFO     | credit_pipeline | ============================================================
+2026-05-01 20:23:01 | INFO     | credit_pipeline | ============================================================
+2026-05-01 20:23:01 | INFO     | credit_pipeline | FINRISKGUARD — CREDIT PIPELINE (Home Credit)
+2026-05-01 20:23:01 | INFO     | credit_pipeline | Stage: fe
+2026-05-01 20:23:01 | INFO     | credit_pipeline | ============================================================
+2026-05-01 20:23:01 | INFO     | credit_pipeline | STAGE 4: Feature Engineering
+2026-05-01 20:36:25 | INFO     | credit_pipeline | ============================================================
+2026-05-01 20:36:25 | INFO     | credit_pipeline | FINRISKGUARD — CREDIT PIPELINE (Home Credit)
+2026-05-01 20:36:25 | INFO     | credit_pipeline | Stage: all
+2026-05-01 20:36:25 | INFO     | credit_pipeline | ============================================================
+2026-05-01 20:36:25 | INFO     | credit_pipeline | STAGE 1: Loading Home Credit data
+2026-05-01 20:36:27 | INFO     | credit_pipeline | Loading supplementary tables...
+2026-05-01 20:36:50 | INFO     | credit_pipeline | STAGE 2: Stratified split
+2026-05-01 20:36:51 | INFO     | credit_pipeline | STAGE 3: Preprocessing
+2026-05-01 20:36:52 | INFO     | credit_pipeline |   Saved: prep_artifacts.pkl
+2026-05-01 20:36:52 | INFO     | credit_pipeline |   Train shape : (246008, 117)
+2026-05-01 20:36:52 | INFO     | credit_pipeline |   Val shape   : (61503, 117)
+2026-05-01 20:36:52 | INFO     | credit_pipeline |   Test shape  : (48744, 116)
+2026-05-01 20:36:52 | INFO     | credit_pipeline | STAGE 4: Feature Engineering
+2026-05-01 20:40:08 | INFO     | credit_pipeline |   Saved: fe_artifacts.pkl
+2026-05-01 20:40:08 | INFO     | credit_pipeline |   Train shape : (246008, 195)
+2026-05-01 20:40:08 | INFO     | credit_pipeline |   Val shape   : (61503, 195)
+2026-05-01 20:40:08 | INFO     | credit_pipeline |   Test shape  : (48744, 194)
+2026-05-01 20:40:08 | INFO     | credit_pipeline | STAGE 5: Credit Feature Selection
+2026-05-01 20:43:40 | INFO     | credit_pipeline |   Saved: feature_selection_report.csv, fs_artifacts.pkl
+2026-05-01 20:43:42 | INFO     | credit_pipeline |   Saved: train/val/test_credit_features.parquet
+2026-05-01 20:43:42 | INFO     | credit_pipeline |   Train : (246008, 107)
+2026-05-01 20:43:42 | INFO     | credit_pipeline |   Val   : (61503, 107)
+2026-05-01 20:43:42 | INFO     | credit_pipeline |   Test  : (48744, 106)
+2026-05-01 20:43:42 | INFO     | credit_pipeline | ============================================================
+2026-05-01 20:43:42 | INFO     | credit_pipeline | CREDIT PIPELINE COMPLETE
+2026-05-01 20:43:42 | INFO     | credit_pipeline | Train : (246008, 107)
+2026-05-01 20:43:42 | INFO     | credit_pipeline | Val   : (61503, 107)
+2026-05-01 20:43:42 | INFO     | credit_pipeline | Test  : (48744, 106)
+2026-05-01 20:43:42 | INFO     | credit_pipeline | ============================================================

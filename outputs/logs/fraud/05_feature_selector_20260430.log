@@ -1,0 +1,69 @@
+2026-04-30 20:33:31 | INFO     | ieee_cis.feature_selector | ==================================================
+2026-04-30 20:33:31 | INFO     | ieee_cis.feature_selector | FEATURE SELECTION — target=isFraud | mode=rank | top_k=200
+2026-04-30 20:33:31 | INFO     | ieee_cis.feature_selector | Input shape: (472432, 478)
+2026-04-30 20:33:31 | INFO     | ieee_cis.feature_selector | Correlation filter: threshold=0.95
+2026-04-30 20:36:48 | INFO     | ieee_cis.feature_selector |   Dropped 80 correlated features (threshold=0.95)
+2026-04-30 20:36:48 | INFO     | ieee_cis.feature_selector |   Sample dropped  : ['C6', 'C7', 'C10', 'C11', 'C14']
+2026-04-30 20:36:48 | INFO     | ieee_cis.feature_selector |   Remaining cols  : 398
+2026-04-30 20:36:48 | INFO     | ieee_cis.feature_selector | Features after correlation filter: 391
+2026-04-30 20:36:48 | INFO     | ieee_cis.feature_selector | Mutual Information selection: top_k=200
+2026-04-30 20:54:54 | INFO     | ieee_cis.feature_selector |   Top 5 MI features : ['addr2', 'V109', 'V247', 'V245', 'V250']
+2026-04-30 20:54:54 | INFO     | ieee_cis.feature_selector |   MI score range    : 0.1426 → 0.0139
+2026-04-30 20:54:54 | INFO     | ieee_cis.feature_selector |   Selected          : 200 features
+2026-04-30 20:54:54 | INFO     | ieee_cis.feature_selector | XGBoost importance selection: top_k=200
+2026-04-30 20:55:11 | INFO     | ieee_cis.feature_selector |   Top 5 XGB features : ['V258', 'V69', 'V317', 'D3', 'V187']
+2026-04-30 20:55:11 | INFO     | ieee_cis.feature_selector |   Importance range   : 0.1067 → 0.001208
+2026-04-30 20:55:11 | INFO     | ieee_cis.feature_selector |   Selected           : 200 features
+2026-04-30 20:55:11 | INFO     | ieee_cis.feature_selector | Combined selection summary:
+2026-04-30 20:55:11 | INFO     | ieee_cis.feature_selector |   MI selected           : 200
+2026-04-30 20:55:11 | INFO     | ieee_cis.feature_selector |   XGB selected          : 200
+2026-04-30 20:55:11 | INFO     | ieee_cis.feature_selector |   Union                 : 296
+2026-04-30 20:55:11 | INFO     | ieee_cis.feature_selector |   Intersection          : 104
+2026-04-30 20:55:11 | INFO     | ieee_cis.feature_selector |   Rank-based (top-200) : 200
+2026-04-30 20:55:11 | INFO     | ieee_cis.feature_selector |   MI∩XGB overlap        : 52.0% of MI selected
+2026-04-30 20:55:11 | INFO     | ieee_cis.feature_selector | Force-included 4 D_normalized features (dropped by correlation filter): ['FE_D1_normalized', 'FE_D10_normalized', 'FE_D14_normalized', 'FE_D15_normalized']
+2026-04-30 20:55:11 | INFO     | ieee_cis.feature_selector | 
+Top 30 features by average rank:
+2026-04-30 20:55:11 | INFO     | ieee_cis.feature_selector | 
+                  MI_score  XGB_importance  MI_rank  XGB_rank  avg_rank  selected
+V201              0.109020        0.015708     39.0       8.0      23.5      True
+V149              0.134667        0.004439     10.0      37.0      23.5      True
+V67               0.125673        0.004678     18.0      35.0      26.5      True
+V87               0.124588        0.003189     20.0      60.0      40.0      True
+V157              0.136872        0.002718      7.0      75.0      41.0      True
+V258              0.086609        0.106650     92.0       1.0      46.5      True
+card6             0.092067        0.011112     80.0      15.0      47.5      True
+V261              0.093562        0.005304     70.0      28.0      49.0      True
+V45               0.091711        0.007721     81.0      17.0      49.0      True
+V83               0.096724        0.003799     63.0      42.0      52.5      True
+D6_isnan          0.093366        0.003832     72.0      41.0      56.5      True
+V47               0.112644        0.002071     31.0     107.0      69.0      True
+id_17             0.110578        0.002101     36.0     103.0      69.5      True
+V62               0.099168        0.002560     59.0      82.0      70.5      True
+D2_isnan          0.069081        0.016417    134.0       7.0      70.5      True
+ProductCD         0.083891        0.003642     99.0      46.0      72.5      True
+V290              0.092825        0.002682     77.0      77.0      77.0      True
+FE_D9_normalized  0.108225        0.002030     41.0     113.0      77.0      True
+V69               0.038338        0.057289    154.0       2.0      78.0      True
+V12               0.087445        0.003010     90.0      66.0      78.0      True
+V35               0.092632        0.002527     78.0      83.0      80.5      True
+R_emaildomain     0.094308        0.002241     68.0      94.0      81.0      True
+V187              0.033253        0.023501    159.0       5.0      82.0      True
+V23               0.131695        0.001644     11.0     153.0      82.0      True
+D5_isnan          0.078671        0.003338    112.0      54.0      83.0      True
+V19               0.093235        0.002313     73.0      93.0      83.0      True
+V55               0.094000        0.002152     69.0     100.0      84.5      True
+D3_isnan          0.060786        0.005059    140.0      31.0      85.5      True
+V56               0.115002        0.001720     27.0     144.0      85.5      True
+M4                0.046299        0.006382    147.0      24.0      85.5      True
+2026-04-30 20:55:11 | INFO     | ieee_cis.feature_selector | 
+Selected feature breakdown:
+2026-04-30 20:55:11 | INFO     | ieee_cis.feature_selector |   FE_ engineered     : 33
+2026-04-30 20:55:11 | INFO     | ieee_cis.feature_selector |   └─ D_normalized    : 14
+2026-04-30 20:55:11 | INFO     | ieee_cis.feature_selector |   _isnan flags       : 9
+2026-04-30 20:55:11 | INFO     | ieee_cis.feature_selector |   Raw features       : 162
+2026-04-30 20:55:11 | INFO     | ieee_cis.feature_selector |   TOTAL              : 204
+2026-04-30 20:55:11 | INFO     | ieee_cis.feature_selector | 
+Final selected features (rank): 204
+2026-04-30 20:55:11 | INFO     | ieee_cis.feature_selector | FEATURE SELECTION COMPLETE
+2026-04-30 20:55:11 | INFO     | ieee_cis.feature_selector | ==================================================

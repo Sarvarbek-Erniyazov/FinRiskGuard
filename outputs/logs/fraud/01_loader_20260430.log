@@ -1,0 +1,22 @@
+2026-04-30 20:30:22 | INFO     | ieee_cis.loader | ==================================================
+2026-04-30 20:30:22 | INFO     | ieee_cis.loader | LOADING & MERGING: train
+2026-04-30 20:30:22 | INFO     | ieee_cis.loader | Loading train_transaction.csv...
+2026-04-30 20:30:29 | INFO     | ieee_cis.loader |   train_transaction shape: (590540, 394)
+2026-04-30 20:30:29 | INFO     | ieee_cis.loader | Loading train_identity.csv...
+2026-04-30 20:30:30 | INFO     | ieee_cis.loader |   train_identity shape: (144233, 41)
+2026-04-30 20:30:30 | INFO     | ieee_cis.loader |   Merged shape : (590540, 434)
+2026-04-30 20:30:30 | INFO     | ieee_cis.loader |   Memory usage : 1984.2 MB
+2026-04-30 20:30:30 | INFO     | ieee_cis.loader |   Fraud rate   : 3.50%
+2026-04-30 20:30:30 | INFO     | ieee_cis.loader | LOADING COMPLETE
+2026-04-30 20:30:30 | INFO     | ieee_cis.loader | ==================================================
+2026-04-30 20:30:30 | INFO     | ieee_cis.loader | ==================================================
+2026-04-30 20:30:30 | INFO     | ieee_cis.loader | LOADING & MERGING: test
+2026-04-30 20:30:30 | INFO     | ieee_cis.loader | Loading test_transaction.csv...
+2026-04-30 20:30:36 | INFO     | ieee_cis.loader |   test_transaction shape: (506691, 393)
+2026-04-30 20:30:36 | INFO     | ieee_cis.loader | Loading test_identity.csv...
+2026-04-30 20:30:37 | INFO     | ieee_cis.loader |   test_identity shape: (141907, 41)
+2026-04-30 20:30:37 | INFO     | ieee_cis.loader |   Merged shape : (506691, 433)
+2026-04-30 20:30:37 | INFO     | ieee_cis.loader |   Memory usage : 1700.3 MB
+2026-04-30 20:30:37 | INFO     | ieee_cis.loader |   isFraud column not present (test set — expected)
+2026-04-30 20:30:37 | INFO     | ieee_cis.loader | LOADING COMPLETE
+2026-04-30 20:30:37 | INFO     | ieee_cis.loader | ==================================================

@@ -1,0 +1,51 @@
+2026-04-30 20:32:26 | INFO     | ieee_cis.preprocessor | ==================================================
+2026-04-30 20:32:26 | INFO     | ieee_cis.preprocessor | PREPROCESSING — TRAIN
+2026-04-30 20:32:26 | INFO     | ieee_cis.preprocessor | Input shape: (472432, 483)
+2026-04-30 20:32:26 | INFO     | ieee_cis.preprocessor | [TRAIN] Dropped 12 columns with >90% missing
+2026-04-30 20:32:26 | INFO     | ieee_cis.preprocessor |   Dropped: ['dist2', 'D7', 'id_07', 'id_08', 'id_18', 'id_21', 'id_22', 'id_23', 'id_24', 'id_25', 'id_26', 'id_27']
+2026-04-30 20:32:26 | INFO     | ieee_cis.preprocessor |   EDA reference list   : ['id_24', 'id_25', 'id_07', 'id_08', 'id_21', 'id_26', 'id_27', 'id_23', 'id_22', 'dist2', 'D7', 'id_18']
+2026-04-30 20:32:26 | INFO     | ieee_cis.preprocessor | Dropped 8 redundant columns: ['C1', 'C4', 'C8', 'C12', 'V242', 'V244', 'V49', 'V90']
+2026-04-30 20:32:26 | INFO     | ieee_cis.preprocessor | [FIX] Converted 6 FE numerical cols to float64: ['FE_card1_amt_mean', 'FE_card1_amt_std', 'FE_card1_amt_count', 'FE_card1a1_amt_mean', 'FE_card1a1_amt_std', 'FE_card1a1_amt_count']
+2026-04-30 20:32:26 | INFO     | ieee_cis.preprocessor | [TRAIN] Added 15 NaN flag columns
+2026-04-30 20:32:26 | INFO     | ieee_cis.preprocessor |   Flags: ['dist1_isnan', 'D1_isnan', 'D2_isnan', 'D3_isnan', 'D4_isnan', 'D5_isnan', 'D6_isnan', 'D8_isnan', 'D9_isnan', 'D10_isnan', 'D11_isnan', 'D12_isnan', 'D13_isnan', 'D14_isnan', 'D15_isnan']
+2026-04-30 20:32:27 | INFO     | ieee_cis.preprocessor | Encoded M columns: T=1, F=0, NaN=-1 | M4 ordinal: M0=0, M1=1, M2=2
+2026-04-30 20:32:47 | INFO     | ieee_cis.preprocessor | [TRAIN] Imputed 14 D columns by card1 group median
+2026-04-30 20:32:49 | INFO     | ieee_cis.preprocessor | [TRAIN] Imputed 370 numerical columns with median
+2026-04-30 20:32:49 | INFO     | ieee_cis.preprocessor | [TRAIN] Imputed 20 categorical columns with mode
+2026-04-30 20:32:52 | INFO     | ieee_cis.preprocessor | [TRAIN] OrdinalEncoder fitted on 24 columns: ['ProductCD', 'card4', 'card6', 'P_emaildomain', 'R_emaildomain', 'id_12', 'id_15', 'id_16', 'id_28', 'id_29', 'id_30', 'id_31', 'id_33', 'id_34', 'id_35', 'id_36', 'id_37', 'id_38', 'DeviceType', 'DeviceInfo', 'card1_addr1', 'card_full', 'FE_uid', 'FE_uid_ext']
+2026-04-30 20:32:52 | INFO     | ieee_cis.preprocessor | Output shape: (472432, 478)
+2026-04-30 20:32:52 | INFO     | ieee_cis.preprocessor | PREPROCESSING TRAIN COMPLETE
+2026-04-30 20:32:52 | INFO     | ieee_cis.preprocessor | ==================================================
+2026-04-30 20:32:52 | INFO     | ieee_cis.preprocessor | ==================================================
+2026-04-30 20:32:52 | INFO     | ieee_cis.preprocessor | PREPROCESSING — TEST/VAL
+2026-04-30 20:32:52 | INFO     | ieee_cis.preprocessor | Input shape: (118108, 483)
+2026-04-30 20:32:52 | INFO     | ieee_cis.preprocessor | [TEST] Dropped 12 high-missing columns
+2026-04-30 20:32:52 | INFO     | ieee_cis.preprocessor |   Columns: ['dist2', 'D7', 'id_07', 'id_08', 'id_18', 'id_21', 'id_22', 'id_23', 'id_24', 'id_25', 'id_26', 'id_27']
+2026-04-30 20:32:52 | INFO     | ieee_cis.preprocessor | Dropped 8 redundant columns: ['C1', 'C4', 'C8', 'C12', 'V242', 'V244', 'V49', 'V90']
+2026-04-30 20:32:52 | INFO     | ieee_cis.preprocessor | [FIX] Converted 6 FE numerical cols to float64: ['FE_card1_amt_mean', 'FE_card1_amt_std', 'FE_card1_amt_count', 'FE_card1a1_amt_mean', 'FE_card1a1_amt_std', 'FE_card1a1_amt_count']
+2026-04-30 20:32:52 | INFO     | ieee_cis.preprocessor | [TEST] Applied 15 NaN flag columns from train
+2026-04-30 20:32:52 | INFO     | ieee_cis.preprocessor | Encoded M columns: T=1, F=0, NaN=-1 | M4 ordinal: M0=0, M1=1, M2=2
+2026-04-30 20:33:02 | INFO     | ieee_cis.preprocessor | [TEST] Applied card1 group imputation to 14 D columns
+2026-04-30 20:33:03 | INFO     | ieee_cis.preprocessor | [TEST] Applied median imputation to 370 numerical columns
+2026-04-30 20:33:03 | INFO     | ieee_cis.preprocessor | [TEST] Applied mode imputation to 20 categorical columns
+2026-04-30 20:33:03 | INFO     | ieee_cis.preprocessor | [TEST] OrdinalEncoder applied to 24 columns
+2026-04-30 20:33:03 | INFO     | ieee_cis.preprocessor | Output shape: (118108, 478)
+2026-04-30 20:33:03 | INFO     | ieee_cis.preprocessor | PREPROCESSING TEST/VAL COMPLETE
+2026-04-30 20:33:03 | INFO     | ieee_cis.preprocessor | ==================================================
+2026-04-30 20:33:03 | INFO     | ieee_cis.preprocessor | ==================================================
+2026-04-30 20:33:03 | INFO     | ieee_cis.preprocessor | PREPROCESSING — TEST/VAL
+2026-04-30 20:33:03 | INFO     | ieee_cis.preprocessor | Input shape: (506691, 481)
+2026-04-30 20:33:03 | INFO     | ieee_cis.preprocessor | [TEST] Dropped 2 high-missing columns
+2026-04-30 20:33:03 | INFO     | ieee_cis.preprocessor |   Columns: ['dist2', 'D7']
+2026-04-30 20:33:03 | INFO     | ieee_cis.preprocessor | Dropped 8 redundant columns: ['C1', 'C4', 'C8', 'C12', 'V242', 'V244', 'V49', 'V90']
+2026-04-30 20:33:03 | INFO     | ieee_cis.preprocessor | [FIX] Converted 6 FE numerical cols to float64: ['FE_card1_amt_mean', 'FE_card1_amt_std', 'FE_card1_amt_count', 'FE_card1a1_amt_mean', 'FE_card1a1_amt_std', 'FE_card1a1_amt_count']
+2026-04-30 20:33:03 | INFO     | ieee_cis.preprocessor | [TEST] Applied 15 NaN flag columns from train
+2026-04-30 20:33:04 | INFO     | ieee_cis.preprocessor | Encoded M columns: T=1, F=0, NaN=-1 | M4 ordinal: M0=0, M1=1, M2=2
+2026-04-30 20:33:26 | INFO     | ieee_cis.preprocessor | [TEST] Applied card1 group imputation to 14 D columns
+2026-04-30 20:33:27 | INFO     | ieee_cis.preprocessor | [TEST] Applied median imputation to 370 numerical columns
+2026-04-30 20:33:27 | INFO     | ieee_cis.preprocessor | [TEST] Applied mode imputation to 20 categorical columns
+2026-04-30 20:33:27 | INFO     | ieee_cis.preprocessor | [TEST] Added 13 missing columns with placeholder: ['id_12', 'id_15', 'id_16', 'id_28', 'id_29', 'id_30', 'id_31', 'id_33', 'id_34', 'id_35', 'id_36', 'id_37', 'id_38']
+2026-04-30 20:33:30 | INFO     | ieee_cis.preprocessor | [TEST] OrdinalEncoder applied to 24 columns
+2026-04-30 20:33:30 | INFO     | ieee_cis.preprocessor | Output shape: (506691, 499)
+2026-04-30 20:33:30 | INFO     | ieee_cis.preprocessor | PREPROCESSING TEST/VAL COMPLETE
+2026-04-30 20:33:30 | INFO     | ieee_cis.preprocessor | ==================================================

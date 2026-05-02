@@ -1,0 +1,67 @@
+# ── Data ─────────────────────────────────────────────────────────────────────
+data:
+  raw_dir: data/raw
+  processed_dir: data/processed
+  features_dir: data/features
+
+# ── Split ─────────────────────────────────────────────────────────────────────
+split:
+  val_ratio: 0.20
+  time_col: TransactionDT
+  n_splits: 5
+
+# ── Preprocessing ─────────────────────────────────────────────────────────────
+preprocessing:
+  high_missing_threshold: 0.90
+  redundant_c_cols: [C1, C4, C8, C12]
+  redundant_v_cols: [V242, V244, V49, V90]
+
+# ── Feature Engineering ───────────────────────────────────────────────────────
+feature_engineering:
+  start_date: "2017-11-30"
+  protonmail_domains:
+    - protonmail.com
+    - mail.com
+    - outlook.es
+    - netzero.net
+    - aim.com
+  risk_bins: [0, 50, 200, 1000]
+  risk_labels: [0, 1, 2, 3]
+
+# ── Feature Selection ─────────────────────────────────────────────────────────
+feature_selection:
+  corr_threshold: 0.95
+  mode: union
+  top_k: 150
+
+# ── Models ────────────────────────────────────────────────────────────────────
+fraud_model:
+  n_estimators: 1000
+  max_depth: 6
+  learning_rate: 0.05
+  subsample: 0.8
+  colsample_bytree: 0.8
+  scale_pos_weight: 27
+  tree_method: hist
+  early_stopping_rounds: 50
+
+credit_model:
+  n_estimators: 500
+  max_depth: 5
+  learning_rate: 0.05
+  subsample: 0.8
+  tree_method: hist
+
+# ── Adversarial ───────────────────────────────────────────────────────────────
+adversarial:
+  pgd_epsilon: 0.05
+  pgd_alpha: 0.01
+  pgd_steps: 10
+  fgsm_epsilon: 0.05
+
+# ── Outputs ───────────────────────────────────────────────────────────────────
+outputs:
+  models_dir: outputs/models
+  figures_dir: outputs/figures
+  reports_dir: outputs/reports
+  logs_dir: outputs/logs

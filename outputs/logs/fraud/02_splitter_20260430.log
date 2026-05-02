@@ -1,0 +1,6 @@
+2026-04-30 20:30:37 | INFO     | ieee_cis.splitter | Starting temporal split...
+2026-04-30 20:30:37 | INFO     | ieee_cis.splitter | Input shape: (590540, 434)
+2026-04-30 20:30:39 | INFO     | ieee_cis.splitter | Train shape : (472432, 434) | Date range: 86400 → 12192842
+2026-04-30 20:30:39 | INFO     | ieee_cis.splitter | Val shape   : (118108, 434)   | Date range: 12192900 → 15811131
+2026-04-30 20:30:39 | INFO     | ieee_cis.splitter | Train fraud rate: 3.51%
+2026-04-30 20:30:39 | INFO     | ieee_cis.splitter | Val fraud rate  : 3.44%
