@@ -105,14 +105,14 @@ Every step was first explored in a Jupyter notebook, then hardened into producti
 
 | Step | Notebook → Code | Key finding |
 |---|---|---|
-| [EDA](docs/fraud/01_eda.md) | `01_eda_fraud.ipynb` | Peak fraud 5–9 AM · D-column drift discovered · risky browsers identified |
-| [Feature Engineering](docs/fraud/03_feature_engineering.md) | `src/features/ieee_cis/feature_engineer.py` | 47 features · D-normalization · UID fingerprints · email/browser risk |
-| [Preprocessing](docs/fraud/04_preprocessing.md) | `src/data/ieee_cis/preprocessor.py` | 15 NaN flags · 12 high-missing cols dropped · OrdinalEncoder |
-| [Feature Selection](docs/fraud/05_feature_selection.md) | `src/features/ieee_cis/feature_selector.py` | MI + XGB rank → 204 final · D_normalized force-included |
-| [Leakage Audit](docs/fraud/02_leakage.md) | `02_fraud_data_leakage_analysis.ipynb` | Zero FAIL across 6 checks · temporal split verified clean |
+| [EDA](docs/fraud/01_eda.md) | `notebooks/01_eda_fraud.ipynb` | Peak fraud 5–9 AM · D-column drift discovered · risky browsers identified |
+| [Feature Engineering](docs/fraud/02_feature_engineering.md) | `src/features/ieee_cis/feature_engineer.py` | 47 features · D-normalization · UID fingerprints · email/browser risk |
+| [Preprocessing](docs/fraud/03_preprocessing.md) | `src/data/ieee_cis/preprocessor.py` | 15 NaN flags · 12 high-missing cols dropped · OrdinalEncoder |
+| [Feature Selection](docs/fraud/04_feature_selection.md) | `src/features/ieee_cis/feature_selector.py` | MI + XGB rank → 204 final · D_normalized force-included |
+| [Leakage Audit](docs/fraud/05_leakage.md) | `notebooks/02_fraud_data_leakage_analysis.ipynb` | Zero FAIL across 6 checks · temporal split verified clean |
 | [Modeling](docs/fraud/06_modeling.md) | `src/models/fraud/fraud_detector.py` | Baseline → Optuna 100 trials → Stacking |
-| [Model Analysis](docs/fraud/07_model_analysis.md) | `06_fraud_model_analysis.ipynb` | tuned_xgb best · AUC-ROC 0.9258 · threshold 0.44 |
-| [SHAP](docs/fraud/08_shap.md) | `07_fraud_shap_analysis.ipynb` | FE features dominate · D_normalized confirmed critical |
+| [Model Analysis](docs/fraud/07_model_analysis.md) | `notebooks/06_fraud_model_analysis.ipynb` | tuned_xgb best · AUC-ROC 0.9258 · threshold 0.44 |
+| [SHAP](docs/fraud/08_shap.md) | `notebooks/07_fraud_shap_analysis.ipynb` | FE features dominate · D_normalized confirmed critical |
 
 ### 🟠 Credit Scoring
 
