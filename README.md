@@ -118,14 +118,14 @@ Every step was first explored in a Jupyter notebook, then hardened into producti
 
 | Step | Notebook → Code | Key finding |
 |---|---|---|
-| [EDA](docs/credit/01_eda.md) | `02_eda_credit.ipynb` | DAYS_EMPLOYED anomaly · EXT_SOURCE missing = signal · 27M bureau rows |
-| [Preprocessing](docs/credit/03_preprocessing.md) | `src/data/home_credit/preprocessor.py` | 44,143 anomalous rows fixed · threshold 67% to keep EXT_SOURCE_1 |
-| [Feature Engineering](docs/credit/04_feature_engineering.md) | `src/features/home_credit/feature_engineer.py` | 78 features · EXT_SOURCE combos · bureau/POS/installment agg · target enc |
-| [Feature Selection](docs/credit/05_feature_selection.md) | `src/features/home_credit/feature_selector.py` | MI + XGB union → 105 final |
-| [Leakage Audit](docs/credit/02_leakage.md) | `05_credit_data_leakage_analysis.ipynb` | Zero FAIL across 6 checks · default rate delta 0.0000% |
+| [EDA](docs/credit/01_eda.md) | `notebooks/02_eda_credit.ipynb` | DAYS_EMPLOYED anomaly · EXT_SOURCE missing = signal · 27M bureau rows |
+| [Preprocessing](docs/credit/02_preprocessing.md) | `src/data/home_credit/preprocessor.py` | 44,143 anomalous rows fixed · threshold 67% to keep EXT_SOURCE_1 |
+| [Feature Engineering](docs/credit/03_feature_engineering.md) | `src/features/home_credit/feature_engineer.py` | 78 features · EXT_SOURCE combos · bureau/POS/installment agg · target enc |
+| [Feature Selection](docs/credit/04_feature_selection.md) | `src/features/home_credit/feature_selector.py` | MI + XGB union → 105 final |
+| [Leakage Audit](docs/credit/05_leakage.md) | `notebooks/05_credit_data_leakage_analysis.ipynb` | Zero FAIL across 6 checks · default rate delta 0.0000% |
 | [Modeling](docs/credit/06_modeling.md) | `src/models/credit/credit_scorer.py` | Baseline → Optuna 100 trials → Stacking |
-| [Model Analysis](docs/credit/07_model_analysis.md) | `08_credit_model_analysis.ipynb` | Stacking best · AUC-ROC 0.7849 · threshold 0.50 |
-| [SHAP](docs/credit/08_shap.md) | `09_credit_shap_analysis.ipynb` | FE features: 69% of total SHAP contribution vs 31% raw |
+| [Model Analysis](docs/credit/07_model_analysis.md) | `notebooks/08_credit_model_analysis.ipynb` | Stacking best · AUC-ROC 0.7849 · threshold 0.50 |
+| [SHAP](docs/credit/08_shap.md) | `notebooks/09_credit_shap_analysis.ipynb` | FE features: 69% of total SHAP contribution vs 31% raw |
 
 ---
 
