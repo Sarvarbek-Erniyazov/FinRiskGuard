@@ -1,67 +1,279 @@
-# ── Data ─────────────────────────────────────────────────────────────────────
-data:
-  raw_dir: data/raw
-  processed_dir: data/processed
-  features_dir: data/features
+# ═══════════════════════════════════════════════════════════════════════════════
+# FinRiskGuard — Master Configuration
+# ═══════════════════════════════════════════════════════════════════════════════
 
-# ── Split ─────────────────────────────────────────────────────────────────────
-split:
-  val_ratio: 0.20
-  time_col: TransactionDT
-  n_splits: 5
+project:
+  name: FinRiskGuard
+  version: "1.0.0"
+  random_seed: 42
 
-# ── Preprocessing ─────────────────────────────────────────────────────────────
-preprocessing:
-  high_missing_threshold: 0.90
-  redundant_c_cols: [C1, C4, C8, C12]
-  redundant_v_cols: [V242, V244, V49, V90]
+# ── Paths ──────────────────────────────────────────────────────────────────────
+paths:
+  data:
+    raw_dir:      data/raw
+    features_dir: data/features          # parquet feature stores
+  outputs:
+    models_dir:  outputs/models
+    figures_dir: outputs/figures
+    reports_dir: outputs/reports
+    logs_dir:    outputs/logs
 
-# ── Feature Engineering ───────────────────────────────────────────────────────
-feature_engineering:
-  start_date: "2017-11-30"
-  protonmail_domains:
-    - protonmail.com
-    - mail.com
-    - outlook.es
-    - netzero.net
-    - aim.com
-  risk_bins: [0, 50, 200, 1000]
-  risk_labels: [0, 1, 2, 3]
+# ── IEEE-CIS Fraud Detection ───────────────────────────────────────────────────
+fraud:
 
-# ── Feature Selection ─────────────────────────────────────────────────────────
-feature_selection:
-  corr_threshold: 0.95
-  mode: union
-  top_k: 150
+  data:
+    train_transaction: data/raw/ieee_cis/train_transaction.csv
+    train_identity:    data/raw/ieee_cis/train_identity.csv
+    test_transaction:  data/raw/ieee_cis/test_transaction.csv
+    test_identity:     data/raw/ieee_cis/test_identity.csv
+    features_train:    data/features/fraud/train_fraud_features.parquet
+    features_val:      data/features/fraud/val_fraud_features.parquet
+    features_test:     data/features/fraud/test_fraud_features.parquet
 
-# ── Models ────────────────────────────────────────────────────────────────────
-fraud_model:
-  n_estimators: 1000
-  max_depth: 6
-  learning_rate: 0.05
-  subsample: 0.8
-  colsample_bytree: 0.8
-  scale_pos_weight: 27
-  tree_method: hist
-  early_stopping_rounds: 50
+  split:
+    strategy: temporal          # temporal split — no shuffle!
+    time_col: TransactionDT
+    test_ratio: 0.20            # 80/20 temporal
+    # val carved from train inside CV only
 
-credit_model:
-  n_estimators: 500
-  max_depth: 5
-  learning_rate: 0.05
-  subsample: 0.8
-  tree_method: hist
+  preprocessing:
+    high_missing_threshold: 0.90      # drop cols > 90% NaN
+    nan_flag_cols_threshold: 0.05     # create _isnan flag if > 5% missing
+    redundant_c_cols: [C1, C4, C8, C12]
+    redundant_v_cols: [V242, V244, V49, V90]
+    ordinal_encoder_handle_unknown: use_encoded_value
+    ordinal_unknown_value: -1
 
-# ── Adversarial ───────────────────────────────────────────────────────────────
+  feature_engineering:
+    start_date: "2017-11-30"          # TransactionDT → real datetime
+    protonmail_domains:
+      - protonmail.com
+      - mail.com
+      - outlook.es
+      - netzero.net
+      - aim.com
+    risk_bins:   [0, 50, 200, 1000]
+    risk_labels: [0, 1, 2, 3]
+    d_cols_normalize: true            # FE_D{n}_normalized = D{n} - TransactionDT_days
+    uid_cols: [card1, card2, card3, card4, card5, card6, addr1, addr2]
+
+  feature_selection:
+    corr_threshold: 0.95
+    mode: union                       # MI union XGB importance
+    top_k: 150
+    force_include:                    # D_normalized cols — always keep
+      - FE_D1_normalized
+      - FE_D2_normalized
+      - FE_D3_normalized
+      - FE_D4_normalized
+      - FE_D5_normalized
+    final_n_features: 204
+
+  model:
+    artifacts:
+      baseline_xgb:  outputs/models/fraud/baseline_xgb.pkl
+      baseline_lgb:  outputs/models/fraud/baseline_lgb.pkl
+      baseline_cat:  outputs/models/fraud/baseline_cat.pkl
+      tuned_xgb:     outputs/models/fraud/tuned_xgb.pkl
+      tuned_lgb:     outputs/models/fraud/tuned_lgb.pkl
+      tuned_cat:     outputs/models/fraud/tuned_cat.pkl
+      stacking_meta: outputs/models/fraud/stacking_meta.pkl
+      production:    outputs/models/fraud/fraud_model.pkl
+      fe_artifacts:  outputs/models/fraud/fe_artifacts.pkl
+      prep_artifacts: outputs/models/fraud/prep_artifacts.pkl
+      fs_artifacts:  outputs/models/fraud/fs_artifacts.pkl
+
+    # Baseline / fallback params (tuned params in params_xgb.json etc.)
+    xgb_baseline:
+      n_estimators: 1000
+      max_depth: 6
+      learning_rate: 0.05
+      subsample: 0.8
+      colsample_bytree: 0.8
+      scale_pos_weight: 28            # 27.6:1 imbalance → ceil = 28
+      tree_method: hist
+      eval_metric: aucpr              # primary metric = AUC-PR
+      early_stopping_rounds: 50
+      random_state: 42
+
+    lgb_baseline:
+      n_estimators: 1000
+      max_depth: 6
+      learning_rate: 0.05
+      subsample: 0.8
+      colsample_bytree: 0.8
+      is_unbalance: true
+      metric: average_precision
+      early_stopping_rounds: 50
+      random_state: 42
+
+    cat_baseline:
+      iterations: 1000
+      depth: 6
+      learning_rate: 0.05
+      auto_class_weights: Balanced
+      eval_metric: PRAUC
+      early_stopping_rounds: 50
+      random_state: 42
+
+    threshold:
+      strategy: recall_constrained     # maximize F1 subject to Recall >= min_recall
+      min_recall: 0.70
+      optimal: 0.44                    # found via threshold sweep
+
+  optuna:
+    n_trials: 100
+    metric: average_precision          # AUC-PR = primary for fraud
+    direction: maximize
+    timeout_seconds: 14400             # 4 hrs
+    params_dir: outputs/models/fraud
+
+  stacking:
+    base_learners: [tuned_xgb, tuned_lgb, tuned_cat]
+    meta_learner: logistic_regression
+    cv_folds: 5
+    use_probabilities: true
+
+# ── Home Credit Credit Scoring ─────────────────────────────────────────────────
+credit:
+
+  data:
+    application_train: data/raw/home_credit/application_train.csv
+    application_test:  data/raw/home_credit/application_test.csv
+    bureau:            data/raw/home_credit/bureau.csv
+    bureau_balance:    data/raw/home_credit/bureau_balance.csv
+    credit_card:       data/raw/home_credit/credit_card_balance.csv
+    installments:      data/raw/home_credit/installments_payments.csv
+    pos_cash:          data/raw/home_credit/POS_CASH_balance.csv
+    previous_app:      data/raw/home_credit/previous_application.csv
+    features_train:    data/features/credit/train_credit_features.parquet
+    features_val:      data/features/credit/val_credit_features.parquet
+    features_test:     data/features/credit/test_credit_features.parquet
+
+  split:
+    strategy: stratified              # applicants are independent
+    test_ratio: 0.20                  # 80/20 → val carved from train
+    val_ratio: 0.15                   # final: 70/15/15
+    target_col: TARGET
+    random_state: 42
+
+  preprocessing:
+    high_missing_threshold: 0.67      # ← specifically to KEEP EXT_SOURCE_1
+    days_employed_anomaly: 365243     # replace with NaN + flag
+    nan_flag_cols_threshold: 0.05
+    ext_source_cols:
+      - EXT_SOURCE_1
+      - EXT_SOURCE_2
+      - EXT_SOURCE_3
+
+  feature_engineering:
+    ext_source_combinations: true     # mean, min, max, std of EXT_SOURCE
+    bureau_aggregations: true         # 27M rows → applicant-level aggs
+    pos_cash_aggregations: true
+    installment_aggregations: true
+    credit_card_aggregations: true
+    target_encoding:
+      cols: [ORGANIZATION_TYPE, OCCUPATION_TYPE]
+      cv_folds: 5                     # leak-safe target encoding
+    final_n_features: 78              # new features created
+
+  feature_selection:
+    corr_threshold: 0.95
+    mode: union
+    top_k: 100
+    force_include:
+      - EXT_SOURCE_1
+      - EXT_SOURCE_2
+      - EXT_SOURCE_3
+      - FE_ext_mean
+      - FE_annuity_credit_ratio
+    final_n_features: 105
+
+  model:
+    artifacts:
+      baseline_xgb:  outputs/models/credit/baseline_xgb.pkl
+      baseline_lgb:  outputs/models/credit/baseline_lgb.pkl
+      baseline_cat:  outputs/models/credit/baseline_cat.pkl
+      tuned_xgb:     outputs/models/credit/tuned_xgb.pkl
+      tuned_lgb:     outputs/models/credit/tuned_lgb.pkl
+      tuned_cat:     outputs/models/credit/tuned_cat.pkl
+      stacking_meta: outputs/models/credit/stacking_meta.pkl
+      production:    outputs/models/credit/credit_model.pkl
+      fe_artifacts:  outputs/models/credit/fe_artifacts.pkl
+      prep_artifacts: outputs/models/credit/prep_artifacts.pkl
+      fs_artifacts:  outputs/models/credit/fs_artifacts.pkl
+
+    xgb_baseline:
+      n_estimators: 500
+      max_depth: 5
+      learning_rate: 0.05
+      subsample: 0.8
+      colsample_bytree: 0.8
+      scale_pos_weight: 11            # 11.4:1 imbalance
+      tree_method: hist
+      eval_metric: aucpr
+      early_stopping_rounds: 50
+      random_state: 42
+
+    lgb_baseline:
+      n_estimators: 500
+      max_depth: 5
+      learning_rate: 0.05
+      subsample: 0.8
+      colsample_bytree: 0.8
+      is_unbalance: true
+      metric: average_precision
+      early_stopping_rounds: 50
+      random_state: 42
+
+    cat_baseline:
+      iterations: 500
+      depth: 5
+      learning_rate: 0.05
+      auto_class_weights: Balanced
+      eval_metric: PRAUC
+      early_stopping_rounds: 50
+      random_state: 42
+
+    threshold:
+      strategy: recall_constrained
+      min_recall: 0.70
+      optimal: 0.50                   # found via threshold sweep
+
+  optuna:
+    n_trials: 100
+    metric: roc_auc                   # AUC-ROC primary for credit
+    direction: maximize
+    timeout_seconds: 25200            # 7 hrs
+    params_dir: outputs/models/credit
+
+  stacking:
+    base_learners: [tuned_xgb, tuned_lgb, tuned_cat]
+    meta_learner: logistic_regression
+    cv_folds: 5
+    use_probabilities: true
+
+# ── Adversarial Robustness ─────────────────────────────────────────────────────
 adversarial:
   pgd_epsilon: 0.05
-  pgd_alpha: 0.01
-  pgd_steps: 10
+  pgd_alpha:   0.01
+  pgd_steps:   10
   fgsm_epsilon: 0.05
+  enabled: false                      # toggle on/off
 
-# ── Outputs ───────────────────────────────────────────────────────────────────
-outputs:
-  models_dir: outputs/models
-  figures_dir: outputs/figures
-  reports_dir: outputs/reports
+# ── API ────────────────────────────────────────────────────────────────────────
+api:
+  host: "0.0.0.0"
+  port: 8000
+  reload: false
+  workers: 4
+  fraud_model_path:  outputs/models/fraud/fraud_model.pkl
+  credit_model_path: outputs/models/credit/credit_model.pkl
+  fraud_threshold:   0.44
+  credit_threshold:  0.50
+
+# ── Logging ────────────────────────────────────────────────────────────────────
+logging:
+  level: INFO
+  format: "%(asctime)s — %(name)s — %(levelname)s — %(message)s"
   logs_dir: outputs/logs

@@ -1,0 +1,654 @@
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN DATA
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | Input shape: (1200, 10)
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | [TRAIN] Dropped 1 columns with >67% missing
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor |   Sample: ['EXT_SOURCE_1']...
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | [TRAIN] DAYS_EMPLOYED anomaly: 218 rows fixed → median=-7257
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | [TRAIN] Added 0 NaN flag columns: []
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 numerical columns with median
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 categorical columns with mode
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | [TRAIN] OrdinalEncoder fitted on 2 columns
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | Output shape: (1200, 10)
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN COMPLETE
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN DATA
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | Input shape: (1200, 10)
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | [TRAIN] Dropped 1 columns with >67% missing
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor |   Sample: ['EXT_SOURCE_1']...
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | [TRAIN] DAYS_EMPLOYED anomaly: 218 rows fixed → median=-7257
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | [TRAIN] Added 0 NaN flag columns: []
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 numerical columns with median
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 categorical columns with mode
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | [TRAIN] OrdinalEncoder fitted on 2 columns
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | Output shape: (1200, 10)
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN COMPLETE
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN DATA
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | Input shape: (1200, 10)
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | [TRAIN] Dropped 1 columns with >67% missing
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor |   Sample: ['EXT_SOURCE_1']...
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | [TRAIN] DAYS_EMPLOYED anomaly: 218 rows fixed → median=-7257
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | [TRAIN] Added 0 NaN flag columns: []
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 numerical columns with median
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 categorical columns with mode
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | [TRAIN] OrdinalEncoder fitted on 2 columns
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | Output shape: (1200, 10)
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN COMPLETE
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | PREPROCESSING TEST DATA
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | Input shape: (400, 10)
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | [TEST] Dropped 1 high-missing columns
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | [TEST] Applied DAYS_EMPLOYED anomaly fix
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | [TEST] Applied 0 NaN flag columns from train
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | [TEST] Applied numerical imputation to 0 columns
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | [TEST] Applied categorical imputation to 0 columns
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | [TEST] OrdinalEncoder applied to 2 columns
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | Output shape: (400, 10)
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | PREPROCESSING TEST COMPLETE
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN DATA
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | Input shape: (1200, 10)
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | [TRAIN] Dropped 1 columns with >67% missing
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor |   Sample: ['EXT_SOURCE_1']...
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | [TRAIN] DAYS_EMPLOYED anomaly: 218 rows fixed → median=-7257
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | [TRAIN] Added 0 NaN flag columns: []
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 numerical columns with median
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 categorical columns with mode
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | [TRAIN] OrdinalEncoder fitted on 2 columns
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | Output shape: (1200, 10)
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN COMPLETE
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN DATA
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | Input shape: (1200, 10)
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | [TRAIN] Dropped 1 columns with >67% missing
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor |   Sample: ['EXT_SOURCE_1']...
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | [TRAIN] DAYS_EMPLOYED anomaly: 218 rows fixed → median=-7257
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | [TRAIN] Added 0 NaN flag columns: []
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 numerical columns with median
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 categorical columns with mode
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | [TRAIN] OrdinalEncoder fitted on 2 columns
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | Output shape: (1200, 10)
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN COMPLETE
+2026-05-04 22:47:36 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN DATA
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | Input shape: (1200, 10)
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] Dropped 1 columns with >67% missing
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor |   Sample: ['EXT_SOURCE_1']...
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] DAYS_EMPLOYED anomaly: 218 rows fixed → median=-7257
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] Added 0 NaN flag columns: []
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 numerical columns with median
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 categorical columns with mode
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] OrdinalEncoder fitted on 2 columns
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | Output shape: (1200, 10)
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN COMPLETE
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN DATA
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | Input shape: (1200, 10)
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] Dropped 1 columns with >67% missing
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor |   Sample: ['EXT_SOURCE_1']...
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] DAYS_EMPLOYED anomaly: 218 rows fixed → median=-7257
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] Added 0 NaN flag columns: []
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 numerical columns with median
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 categorical columns with mode
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] OrdinalEncoder fitted on 2 columns
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | Output shape: (1200, 10)
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN COMPLETE
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | PREPROCESSING TEST DATA
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | Input shape: (400, 10)
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TEST] Dropped 1 high-missing columns
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TEST] Applied DAYS_EMPLOYED anomaly fix
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TEST] Applied 0 NaN flag columns from train
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TEST] Applied numerical imputation to 0 columns
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TEST] Applied categorical imputation to 0 columns
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TEST] OrdinalEncoder applied to 2 columns
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | Output shape: (400, 10)
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | PREPROCESSING TEST COMPLETE
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN DATA
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | Input shape: (1200, 10)
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] Dropped 1 columns with >67% missing
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor |   Sample: ['EXT_SOURCE_1']...
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] DAYS_EMPLOYED anomaly: 218 rows fixed → median=-7257
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] Added 0 NaN flag columns: []
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 numerical columns with median
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 categorical columns with mode
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] OrdinalEncoder fitted on 2 columns
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | Output shape: (1200, 10)
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN COMPLETE
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN DATA
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | Input shape: (1200, 10)
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] Dropped 1 columns with >67% missing
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor |   Sample: ['EXT_SOURCE_1']...
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] DAYS_EMPLOYED anomaly: 218 rows fixed → median=-7257
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] Added 0 NaN flag columns: []
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 numerical columns with median
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 categorical columns with mode
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] OrdinalEncoder fitted on 2 columns
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | Output shape: (1200, 10)
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN COMPLETE
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN DATA
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | Input shape: (1200, 10)
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] Dropped 1 columns with >67% missing
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor |   Sample: ['EXT_SOURCE_1']...
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] DAYS_EMPLOYED anomaly: 218 rows fixed → median=-7257
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] Added 0 NaN flag columns: []
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 numerical columns with median
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 categorical columns with mode
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] OrdinalEncoder fitted on 2 columns
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | Output shape: (1200, 10)
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN COMPLETE
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN DATA
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | Input shape: (1200, 10)
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] Dropped 1 columns with >67% missing
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor |   Sample: ['EXT_SOURCE_1']...
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] DAYS_EMPLOYED anomaly: 218 rows fixed → median=-7257
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] Added 0 NaN flag columns: []
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 numerical columns with median
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 categorical columns with mode
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] OrdinalEncoder fitted on 2 columns
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | Output shape: (1200, 10)
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN COMPLETE
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN DATA
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | Input shape: (1200, 10)
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] Dropped 1 columns with >67% missing
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor |   Sample: ['EXT_SOURCE_1']...
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] DAYS_EMPLOYED anomaly: 218 rows fixed → median=-7257
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] Added 0 NaN flag columns: []
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 numerical columns with median
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 categorical columns with mode
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] OrdinalEncoder fitted on 2 columns
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | Output shape: (1200, 10)
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN COMPLETE
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | PREPROCESSING TEST DATA
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | Input shape: (400, 10)
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TEST] Dropped 1 high-missing columns
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TEST] Applied DAYS_EMPLOYED anomaly fix
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TEST] Applied 0 NaN flag columns from train
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TEST] Applied numerical imputation to 0 columns
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TEST] Applied categorical imputation to 0 columns
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TEST] OrdinalEncoder applied to 2 columns
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | Output shape: (400, 10)
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | PREPROCESSING TEST COMPLETE
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN DATA
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | Input shape: (1200, 10)
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] Dropped 1 columns with >67% missing
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor |   Sample: ['EXT_SOURCE_1']...
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] DAYS_EMPLOYED anomaly: 218 rows fixed → median=-7257
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] Added 0 NaN flag columns: []
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 numerical columns with median
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 categorical columns with mode
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] OrdinalEncoder fitted on 2 columns
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | Output shape: (1200, 10)
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN COMPLETE
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN DATA
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | Input shape: (1200, 10)
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] Dropped 1 columns with >67% missing
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor |   Sample: ['EXT_SOURCE_1']...
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] DAYS_EMPLOYED anomaly: 218 rows fixed → median=-7257
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] Added 0 NaN flag columns: []
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 numerical columns with median
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 categorical columns with mode
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | [TRAIN] OrdinalEncoder fitted on 2 columns
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | Output shape: (1200, 10)
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN COMPLETE
+2026-05-04 22:47:37 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN DATA
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | Input shape: (1200, 10)
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Dropped 1 columns with >67% missing
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor |   Sample: ['EXT_SOURCE_1']...
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] DAYS_EMPLOYED anomaly: 218 rows fixed → median=-7257
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Added 0 NaN flag columns: []
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 numerical columns with median
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 categorical columns with mode
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] OrdinalEncoder fitted on 2 columns
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | Output shape: (1200, 10)
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN COMPLETE
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN DATA
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | Input shape: (1200, 10)
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Dropped 1 columns with >67% missing
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor |   Sample: ['EXT_SOURCE_1']...
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] DAYS_EMPLOYED anomaly: 218 rows fixed → median=-7257
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Added 0 NaN flag columns: []
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 numerical columns with median
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 categorical columns with mode
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] OrdinalEncoder fitted on 2 columns
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | Output shape: (1200, 10)
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN COMPLETE
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN DATA
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | Input shape: (1200, 10)
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Dropped 1 columns with >67% missing
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor |   Sample: ['EXT_SOURCE_1']...
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] DAYS_EMPLOYED anomaly: 218 rows fixed → median=-7257
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Added 0 NaN flag columns: []
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 numerical columns with median
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 categorical columns with mode
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] OrdinalEncoder fitted on 2 columns
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | Output shape: (1200, 10)
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN COMPLETE
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | PREPROCESSING TEST DATA
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | Input shape: (400, 10)
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TEST] Dropped 1 high-missing columns
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TEST] Applied DAYS_EMPLOYED anomaly fix
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TEST] Applied 0 NaN flag columns from train
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TEST] Applied numerical imputation to 0 columns
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TEST] Applied categorical imputation to 0 columns
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TEST] OrdinalEncoder applied to 2 columns
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | Output shape: (400, 10)
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | PREPROCESSING TEST COMPLETE
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN DATA
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | Input shape: (1200, 10)
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Dropped 1 columns with >67% missing
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor |   Sample: ['EXT_SOURCE_1']...
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] DAYS_EMPLOYED anomaly: 218 rows fixed → median=-7257
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Added 0 NaN flag columns: []
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 numerical columns with median
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 categorical columns with mode
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] OrdinalEncoder fitted on 2 columns
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | Output shape: (1200, 10)
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN COMPLETE
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN DATA
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | Input shape: (1200, 10)
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Dropped 1 columns with >67% missing
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor |   Sample: ['EXT_SOURCE_1']...
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] DAYS_EMPLOYED anomaly: 218 rows fixed → median=-7257
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Added 0 NaN flag columns: []
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 numerical columns with median
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 categorical columns with mode
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] OrdinalEncoder fitted on 2 columns
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | Output shape: (1200, 10)
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN COMPLETE
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN DATA
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | Input shape: (1200, 10)
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Dropped 1 columns with >67% missing
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor |   Sample: ['EXT_SOURCE_1']...
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] DAYS_EMPLOYED anomaly: 218 rows fixed → median=-7257
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Added 0 NaN flag columns: []
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 numerical columns with median
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 categorical columns with mode
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] OrdinalEncoder fitted on 2 columns
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | Output shape: (1200, 10)
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN COMPLETE
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN DATA
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | Input shape: (1200, 10)
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Dropped 1 columns with >67% missing
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor |   Sample: ['EXT_SOURCE_1']...
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] DAYS_EMPLOYED anomaly: 218 rows fixed → median=-7257
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Added 0 NaN flag columns: []
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 numerical columns with median
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 categorical columns with mode
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] OrdinalEncoder fitted on 2 columns
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | Output shape: (1200, 10)
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN COMPLETE
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | PREPROCESSING TEST DATA
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | Input shape: (400, 10)
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TEST] Dropped 1 high-missing columns
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TEST] Applied DAYS_EMPLOYED anomaly fix
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TEST] Applied 0 NaN flag columns from train
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TEST] Applied numerical imputation to 0 columns
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TEST] Applied categorical imputation to 0 columns
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TEST] OrdinalEncoder applied to 2 columns
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | Output shape: (400, 10)
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | PREPROCESSING TEST COMPLETE
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN DATA
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | Input shape: (1200, 10)
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Dropped 1 columns with >67% missing
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor |   Sample: ['EXT_SOURCE_1']...
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] DAYS_EMPLOYED anomaly: 218 rows fixed → median=-7257
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Added 0 NaN flag columns: []
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 numerical columns with median
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 categorical columns with mode
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] OrdinalEncoder fitted on 2 columns
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | Output shape: (1200, 10)
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN COMPLETE
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN DATA
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | Input shape: (1200, 10)
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Dropped 1 columns with >67% missing
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor |   Sample: ['EXT_SOURCE_1']...
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] DAYS_EMPLOYED anomaly: 218 rows fixed → median=-7257
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Added 0 NaN flag columns: []
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 numerical columns with median
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 categorical columns with mode
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] OrdinalEncoder fitted on 2 columns
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | Output shape: (1200, 10)
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN COMPLETE
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN DATA
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | Input shape: (1200, 10)
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Dropped 1 columns with >67% missing
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor |   Sample: ['EXT_SOURCE_1']...
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] DAYS_EMPLOYED anomaly: 218 rows fixed → median=-7257
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Added 0 NaN flag columns: []
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 numerical columns with median
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 categorical columns with mode
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] OrdinalEncoder fitted on 2 columns
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | Output shape: (1200, 10)
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN COMPLETE
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN DATA
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | Input shape: (1200, 10)
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Dropped 1 columns with >67% missing
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor |   Sample: ['EXT_SOURCE_1']...
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] DAYS_EMPLOYED anomaly: 218 rows fixed → median=-7257
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Added 0 NaN flag columns: []
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 numerical columns with median
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 categorical columns with mode
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] OrdinalEncoder fitted on 2 columns
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | Output shape: (1200, 10)
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN COMPLETE
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN DATA
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | Input shape: (1200, 10)
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Dropped 1 columns with >67% missing
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor |   Sample: ['EXT_SOURCE_1']...
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] DAYS_EMPLOYED anomaly: 218 rows fixed → median=-7257
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Added 0 NaN flag columns: []
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 numerical columns with median
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 categorical columns with mode
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] OrdinalEncoder fitted on 2 columns
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | Output shape: (1200, 10)
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN COMPLETE
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | PREPROCESSING TEST DATA
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | Input shape: (400, 10)
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TEST] Dropped 1 high-missing columns
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TEST] Applied DAYS_EMPLOYED anomaly fix
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TEST] Applied 0 NaN flag columns from train
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TEST] Applied numerical imputation to 0 columns
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TEST] Applied categorical imputation to 0 columns
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TEST] OrdinalEncoder applied to 2 columns
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | Output shape: (400, 10)
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | PREPROCESSING TEST COMPLETE
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN DATA
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | Input shape: (1200, 10)
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Dropped 1 columns with >67% missing
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor |   Sample: ['EXT_SOURCE_1']...
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] DAYS_EMPLOYED anomaly: 218 rows fixed → median=-7257
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Added 0 NaN flag columns: []
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 numerical columns with median
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 categorical columns with mode
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] OrdinalEncoder fitted on 2 columns
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | Output shape: (1200, 10)
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN COMPLETE
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN DATA
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | Input shape: (1200, 10)
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Dropped 1 columns with >67% missing
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor |   Sample: ['EXT_SOURCE_1']...
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] DAYS_EMPLOYED anomaly: 218 rows fixed → median=-7257
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Added 0 NaN flag columns: []
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 numerical columns with median
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 categorical columns with mode
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | [TRAIN] OrdinalEncoder fitted on 2 columns
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | Output shape: (1200, 10)
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN COMPLETE
+2026-05-04 22:51:04 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN DATA
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | Input shape: (1200, 10)
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Dropped 1 columns with >67% missing
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor |   Sample: ['EXT_SOURCE_1']...
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] DAYS_EMPLOYED anomaly: 218 rows fixed → median=-7257
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Added 0 NaN flag columns: []
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 numerical columns with median
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 categorical columns with mode
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] OrdinalEncoder fitted on 2 columns
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | Output shape: (1200, 10)
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN COMPLETE
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN DATA
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | Input shape: (1200, 10)
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Dropped 1 columns with >67% missing
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor |   Sample: ['EXT_SOURCE_1']...
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] DAYS_EMPLOYED anomaly: 218 rows fixed → median=-7257
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Added 0 NaN flag columns: []
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 numerical columns with median
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 categorical columns with mode
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] OrdinalEncoder fitted on 2 columns
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | Output shape: (1200, 10)
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN COMPLETE
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN DATA
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | Input shape: (1200, 10)
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Dropped 1 columns with >67% missing
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor |   Sample: ['EXT_SOURCE_1']...
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] DAYS_EMPLOYED anomaly: 218 rows fixed → median=-7257
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Added 0 NaN flag columns: []
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 numerical columns with median
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 categorical columns with mode
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] OrdinalEncoder fitted on 2 columns
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | Output shape: (1200, 10)
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN COMPLETE
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | PREPROCESSING TEST DATA
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | Input shape: (400, 10)
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TEST] Dropped 1 high-missing columns
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TEST] Applied DAYS_EMPLOYED anomaly fix
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TEST] Applied 0 NaN flag columns from train
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TEST] Applied numerical imputation to 0 columns
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TEST] Applied categorical imputation to 0 columns
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TEST] OrdinalEncoder applied to 2 columns
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | Output shape: (400, 10)
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | PREPROCESSING TEST COMPLETE
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN DATA
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | Input shape: (1200, 10)
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Dropped 1 columns with >67% missing
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor |   Sample: ['EXT_SOURCE_1']...
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] DAYS_EMPLOYED anomaly: 218 rows fixed → median=-7257
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Added 0 NaN flag columns: []
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 numerical columns with median
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 categorical columns with mode
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] OrdinalEncoder fitted on 2 columns
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | Output shape: (1200, 10)
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN COMPLETE
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN DATA
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | Input shape: (1200, 10)
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Dropped 1 columns with >67% missing
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor |   Sample: ['EXT_SOURCE_1']...
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] DAYS_EMPLOYED anomaly: 218 rows fixed → median=-7257
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Added 0 NaN flag columns: []
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 numerical columns with median
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 categorical columns with mode
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] OrdinalEncoder fitted on 2 columns
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | Output shape: (1200, 10)
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN COMPLETE
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN DATA
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | Input shape: (1200, 10)
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Dropped 1 columns with >67% missing
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor |   Sample: ['EXT_SOURCE_1']...
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] DAYS_EMPLOYED anomaly: 218 rows fixed → median=-7257
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Added 0 NaN flag columns: []
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 numerical columns with median
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 categorical columns with mode
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] OrdinalEncoder fitted on 2 columns
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | Output shape: (1200, 10)
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN COMPLETE
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN DATA
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | Input shape: (1200, 10)
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Dropped 1 columns with >67% missing
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor |   Sample: ['EXT_SOURCE_1']...
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] DAYS_EMPLOYED anomaly: 218 rows fixed → median=-7257
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Added 0 NaN flag columns: []
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 numerical columns with median
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 categorical columns with mode
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] OrdinalEncoder fitted on 2 columns
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | Output shape: (1200, 10)
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN COMPLETE
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | PREPROCESSING TEST DATA
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | Input shape: (400, 10)
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TEST] Dropped 1 high-missing columns
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TEST] Applied DAYS_EMPLOYED anomaly fix
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TEST] Applied 0 NaN flag columns from train
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TEST] Applied numerical imputation to 0 columns
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TEST] Applied categorical imputation to 0 columns
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TEST] OrdinalEncoder applied to 2 columns
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | Output shape: (400, 10)
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | PREPROCESSING TEST COMPLETE
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN DATA
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | Input shape: (1200, 10)
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Dropped 1 columns with >67% missing
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor |   Sample: ['EXT_SOURCE_1']...
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] DAYS_EMPLOYED anomaly: 218 rows fixed → median=-7257
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Added 0 NaN flag columns: []
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 numerical columns with median
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 categorical columns with mode
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] OrdinalEncoder fitted on 2 columns
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | Output shape: (1200, 10)
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN COMPLETE
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN DATA
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | Input shape: (1200, 10)
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Dropped 1 columns with >67% missing
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor |   Sample: ['EXT_SOURCE_1']...
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] DAYS_EMPLOYED anomaly: 218 rows fixed → median=-7257
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Added 0 NaN flag columns: []
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 numerical columns with median
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 categorical columns with mode
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] OrdinalEncoder fitted on 2 columns
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | Output shape: (1200, 10)
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN COMPLETE
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN DATA
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | Input shape: (1200, 10)
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Dropped 1 columns with >67% missing
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor |   Sample: ['EXT_SOURCE_1']...
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] DAYS_EMPLOYED anomaly: 218 rows fixed → median=-7257
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Added 0 NaN flag columns: []
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 numerical columns with median
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 categorical columns with mode
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] OrdinalEncoder fitted on 2 columns
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | Output shape: (1200, 10)
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN COMPLETE
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN DATA
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | Input shape: (1200, 10)
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Dropped 1 columns with >67% missing
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor |   Sample: ['EXT_SOURCE_1']...
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] DAYS_EMPLOYED anomaly: 218 rows fixed → median=-7257
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Added 0 NaN flag columns: []
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 numerical columns with median
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 categorical columns with mode
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] OrdinalEncoder fitted on 2 columns
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | Output shape: (1200, 10)
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN COMPLETE
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN DATA
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | Input shape: (1200, 10)
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Dropped 1 columns with >67% missing
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor |   Sample: ['EXT_SOURCE_1']...
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] DAYS_EMPLOYED anomaly: 218 rows fixed → median=-7257
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Added 0 NaN flag columns: []
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 numerical columns with median
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 categorical columns with mode
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] OrdinalEncoder fitted on 2 columns
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | Output shape: (1200, 10)
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN COMPLETE
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | PREPROCESSING TEST DATA
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | Input shape: (400, 10)
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TEST] Dropped 1 high-missing columns
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TEST] Applied DAYS_EMPLOYED anomaly fix
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TEST] Applied 0 NaN flag columns from train
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TEST] Applied numerical imputation to 0 columns
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TEST] Applied categorical imputation to 0 columns
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TEST] OrdinalEncoder applied to 2 columns
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | Output shape: (400, 10)
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | PREPROCESSING TEST COMPLETE
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN DATA
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | Input shape: (1200, 10)
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Dropped 1 columns with >67% missing
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor |   Sample: ['EXT_SOURCE_1']...
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] DAYS_EMPLOYED anomaly: 218 rows fixed → median=-7257
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Added 0 NaN flag columns: []
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 numerical columns with median
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 categorical columns with mode
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] OrdinalEncoder fitted on 2 columns
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | Output shape: (1200, 10)
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN COMPLETE
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN DATA
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | Input shape: (1200, 10)
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Dropped 1 columns with >67% missing
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor |   Sample: ['EXT_SOURCE_1']...
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] DAYS_EMPLOYED anomaly: 218 rows fixed → median=-7257
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Added 0 NaN flag columns: []
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 numerical columns with median
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] Imputed 0 categorical columns with mode
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | [TRAIN] OrdinalEncoder fitted on 2 columns
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | Output shape: (1200, 10)
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | PREPROCESSING TRAIN COMPLETE
+2026-05-04 22:52:13 | INFO     | home_credit.preprocessor | ==================================================

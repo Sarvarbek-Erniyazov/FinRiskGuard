@@ -1,0 +1,34 @@
+version: "3.9"
+
+services:
+  finriskguard-api:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: finriskguard-api
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONPATH=/app
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c",
+             "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+
+  finriskguard-gradio:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.gradio
+    container_name: finriskguard-gradio
+    ports:
+      - "7860:7860"
+    environment:
+      - API_URL=http://finriskguard-api:8000
+    depends_on:
+      finriskguard-api:
+        condition: service_healthy
+    restart: unless-stopped

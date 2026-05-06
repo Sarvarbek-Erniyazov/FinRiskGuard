@@ -1,0 +1,124 @@
+2026-05-06 20:39:28 | INFO     | ieee_cis.feature_engineer | ==================================================
+2026-05-06 20:39:28 | INFO     | ieee_cis.feature_engineer | FEATURE ENGINEERING — TEST/VAL
+2026-05-06 20:39:28 | INFO     | ieee_cis.feature_engineer | Input shape: (1, 4)
+2026-05-06 20:39:28 | INFO     | ieee_cis.feature_engineer | FE: log1p(TransactionAmt)
+2026-05-06 20:39:28 | INFO     | ieee_cis.feature_engineer |   Skewness: nan → nan
+2026-05-06 20:39:28 | INFO     | ieee_cis.feature_engineer | FE: Temporal features from TransactionDT
+2026-05-06 20:39:28 | INFO     | ieee_cis.feature_engineer |   START_DATE         : 2017-12-01
+2026-05-06 20:39:28 | INFO     | ieee_cis.feature_engineer |   Date range         : 2017-12-02 00:00:00 → 2017-12-02 00:00:00
+2026-05-06 20:39:28 | INFO     | ieee_cis.feature_engineer |   PEAK_FRAUD_HOURS   : [5, 6, 7, 8, 9]
+2026-05-06 20:39:28 | INFO     | ieee_cis.feature_engineer |   Created: FE_hour, FE_dayofweek, FE_day, FE_month, FE_is_night, FE_is_weekend, FE_is_peak_fraud_hour, _TransactionDT_days
+2026-05-06 20:39:28 | INFO     | ieee_cis.feature_engineer | FE: D column normalization
+2026-05-06 20:39:28 | INFO     | ieee_cis.feature_engineer |   Formula  : FE_D{n}_normalized = D{n} - TransactionDT_days
+2026-05-06 20:39:28 | INFO     | ieee_cis.feature_engineer |   Created  : 0 normalized D features
+2026-05-06 20:39:28 | INFO     | ieee_cis.feature_engineer |   Columns  : []
+2026-05-06 20:39:28 | INFO     | ieee_cis.feature_engineer | FE: Card combination fingerprints
+2026-05-06 20:39:28 | INFO     | ieee_cis.feature_engineer |   Created: []
+2026-05-06 20:39:28 | INFO     | ieee_cis.feature_engineer | FE: UID features
+2026-05-06 20:39:28 | INFO     | ieee_cis.feature_engineer |   Created: []
+2026-05-06 20:39:28 | INFO     | ieee_cis.feature_engineer | FE: Email domain risk flags
+2026-05-06 20:39:28 | INFO     | ieee_cis.feature_engineer |   Created: []
+2026-05-06 20:39:28 | INFO     | ieee_cis.feature_engineer | FE: Browser risk flag skipped — id_31 not found
+2026-05-06 20:39:28 | INFO     | ieee_cis.feature_engineer | FE: Device type skipped — DeviceType not found
+2026-05-06 20:39:28 | INFO     | ieee_cis.feature_engineer | FE: Card aggregations
+2026-05-06 20:39:28 | INFO     | ieee_cis.feature_engineer |   [TEST] Applied 6 aggregation maps
+2026-05-06 20:39:28 | INFO     | ieee_cis.feature_engineer | FE: Frequency encoding
+2026-05-06 20:39:28 | INFO     | ieee_cis.feature_engineer |   [TEST] Applied 9 frequency maps
+2026-05-06 20:39:28 | INFO     | ieee_cis.feature_engineer | FE: Cleaned temp columns: ['_TransactionDT_days']
+2026-05-06 20:39:28 | INFO     | ieee_cis.feature_engineer | Total FE features applied : 8
+2026-05-06 20:39:28 | INFO     | ieee_cis.feature_engineer | Output shape              : (1, 12)
+2026-05-06 20:39:28 | INFO     | ieee_cis.feature_engineer | FEATURE ENGINEERING TEST/VAL COMPLETE
+2026-05-06 20:39:28 | INFO     | ieee_cis.feature_engineer | ==================================================
+2026-05-06 20:40:17 | INFO     | ieee_cis.feature_engineer | ==================================================
+2026-05-06 20:40:17 | INFO     | ieee_cis.feature_engineer | FEATURE ENGINEERING — TEST/VAL
+2026-05-06 20:40:17 | INFO     | ieee_cis.feature_engineer | Input shape: (1, 3)
+2026-05-06 20:40:17 | INFO     | ieee_cis.feature_engineer | FE: log1p(TransactionAmt)
+2026-05-06 20:40:17 | INFO     | ieee_cis.feature_engineer |   Skewness: nan → nan
+2026-05-06 20:40:17 | INFO     | ieee_cis.feature_engineer | FE: Temporal features from TransactionDT
+2026-05-06 20:40:17 | INFO     | ieee_cis.feature_engineer |   START_DATE         : 2017-12-01
+2026-05-06 20:40:17 | INFO     | ieee_cis.feature_engineer |   Date range         : 2017-12-02 00:00:00 → 2017-12-02 00:00:00
+2026-05-06 20:40:17 | INFO     | ieee_cis.feature_engineer |   PEAK_FRAUD_HOURS   : [5, 6, 7, 8, 9]
+2026-05-06 20:40:17 | INFO     | ieee_cis.feature_engineer |   Created: FE_hour, FE_dayofweek, FE_day, FE_month, FE_is_night, FE_is_weekend, FE_is_peak_fraud_hour, _TransactionDT_days
+2026-05-06 20:40:17 | INFO     | ieee_cis.feature_engineer | FE: D column normalization
+2026-05-06 20:40:17 | INFO     | ieee_cis.feature_engineer |   Formula  : FE_D{n}_normalized = D{n} - TransactionDT_days
+2026-05-06 20:40:17 | INFO     | ieee_cis.feature_engineer |   Created  : 0 normalized D features
+2026-05-06 20:40:17 | INFO     | ieee_cis.feature_engineer |   Columns  : []
+2026-05-06 20:40:17 | INFO     | ieee_cis.feature_engineer | FE: Card combination fingerprints
+2026-05-06 20:40:17 | INFO     | ieee_cis.feature_engineer |   Created: []
+2026-05-06 20:40:17 | INFO     | ieee_cis.feature_engineer | FE: UID features
+2026-05-06 20:40:17 | INFO     | ieee_cis.feature_engineer |   Created: []
+2026-05-06 20:40:17 | INFO     | ieee_cis.feature_engineer | FE: Email domain risk flags
+2026-05-06 20:40:17 | INFO     | ieee_cis.feature_engineer |   Created: []
+2026-05-06 20:40:17 | INFO     | ieee_cis.feature_engineer | FE: Browser risk flag skipped — id_31 not found
+2026-05-06 20:40:17 | INFO     | ieee_cis.feature_engineer | FE: Device type skipped — DeviceType not found
+2026-05-06 20:40:17 | INFO     | ieee_cis.feature_engineer | FE: Card aggregations
+2026-05-06 20:40:17 | INFO     | ieee_cis.feature_engineer |   [TEST] Applied 6 aggregation maps
+2026-05-06 20:40:17 | INFO     | ieee_cis.feature_engineer | FE: Frequency encoding
+2026-05-06 20:40:17 | INFO     | ieee_cis.feature_engineer |   [TEST] Applied 9 frequency maps
+2026-05-06 20:40:17 | INFO     | ieee_cis.feature_engineer | FE: Cleaned temp columns: ['_TransactionDT_days']
+2026-05-06 20:40:17 | INFO     | ieee_cis.feature_engineer | Total FE features applied : 8
+2026-05-06 20:40:17 | INFO     | ieee_cis.feature_engineer | Output shape              : (1, 11)
+2026-05-06 20:40:17 | INFO     | ieee_cis.feature_engineer | FEATURE ENGINEERING TEST/VAL COMPLETE
+2026-05-06 20:40:17 | INFO     | ieee_cis.feature_engineer | ==================================================
+2026-05-06 20:40:27 | INFO     | ieee_cis.feature_engineer | ==================================================
+2026-05-06 20:40:27 | INFO     | ieee_cis.feature_engineer | FEATURE ENGINEERING — TEST/VAL
+2026-05-06 20:40:27 | INFO     | ieee_cis.feature_engineer | Input shape: (1, 3)
+2026-05-06 20:40:27 | INFO     | ieee_cis.feature_engineer | FE: log1p(TransactionAmt)
+2026-05-06 20:40:27 | INFO     | ieee_cis.feature_engineer |   Skewness: nan → nan
+2026-05-06 20:40:27 | INFO     | ieee_cis.feature_engineer | FE: Temporal features from TransactionDT
+2026-05-06 20:40:27 | INFO     | ieee_cis.feature_engineer |   START_DATE         : 2017-12-01
+2026-05-06 20:40:27 | INFO     | ieee_cis.feature_engineer |   Date range         : 2017-12-02 00:00:00 → 2017-12-02 00:00:00
+2026-05-06 20:40:27 | INFO     | ieee_cis.feature_engineer |   PEAK_FRAUD_HOURS   : [5, 6, 7, 8, 9]
+2026-05-06 20:40:27 | INFO     | ieee_cis.feature_engineer |   Created: FE_hour, FE_dayofweek, FE_day, FE_month, FE_is_night, FE_is_weekend, FE_is_peak_fraud_hour, _TransactionDT_days
+2026-05-06 20:40:27 | INFO     | ieee_cis.feature_engineer | FE: D column normalization
+2026-05-06 20:40:27 | INFO     | ieee_cis.feature_engineer |   Formula  : FE_D{n}_normalized = D{n} - TransactionDT_days
+2026-05-06 20:40:27 | INFO     | ieee_cis.feature_engineer |   Created  : 0 normalized D features
+2026-05-06 20:40:27 | INFO     | ieee_cis.feature_engineer |   Columns  : []
+2026-05-06 20:40:27 | INFO     | ieee_cis.feature_engineer | FE: Card combination fingerprints
+2026-05-06 20:40:27 | INFO     | ieee_cis.feature_engineer |   Created: []
+2026-05-06 20:40:27 | INFO     | ieee_cis.feature_engineer | FE: UID features
+2026-05-06 20:40:27 | INFO     | ieee_cis.feature_engineer |   Created: []
+2026-05-06 20:40:27 | INFO     | ieee_cis.feature_engineer | FE: Email domain risk flags
+2026-05-06 20:40:27 | INFO     | ieee_cis.feature_engineer |   Created: []
+2026-05-06 20:40:27 | INFO     | ieee_cis.feature_engineer | FE: Browser risk flag skipped — id_31 not found
+2026-05-06 20:40:27 | INFO     | ieee_cis.feature_engineer | FE: Device type skipped — DeviceType not found
+2026-05-06 20:40:27 | INFO     | ieee_cis.feature_engineer | FE: Card aggregations
+2026-05-06 20:40:27 | INFO     | ieee_cis.feature_engineer |   [TEST] Applied 6 aggregation maps
+2026-05-06 20:40:27 | INFO     | ieee_cis.feature_engineer | FE: Frequency encoding
+2026-05-06 20:40:27 | INFO     | ieee_cis.feature_engineer |   [TEST] Applied 9 frequency maps
+2026-05-06 20:40:27 | INFO     | ieee_cis.feature_engineer | FE: Cleaned temp columns: ['_TransactionDT_days']
+2026-05-06 20:40:27 | INFO     | ieee_cis.feature_engineer | Total FE features applied : 8
+2026-05-06 20:40:27 | INFO     | ieee_cis.feature_engineer | Output shape              : (1, 11)
+2026-05-06 20:40:27 | INFO     | ieee_cis.feature_engineer | FEATURE ENGINEERING TEST/VAL COMPLETE
+2026-05-06 20:40:27 | INFO     | ieee_cis.feature_engineer | ==================================================
+2026-05-06 20:41:06 | INFO     | ieee_cis.feature_engineer | ==================================================
+2026-05-06 20:41:06 | INFO     | ieee_cis.feature_engineer | FEATURE ENGINEERING — TEST/VAL
+2026-05-06 20:41:06 | INFO     | ieee_cis.feature_engineer | Input shape: (1, 3)
+2026-05-06 20:41:06 | INFO     | ieee_cis.feature_engineer | FE: log1p(TransactionAmt)
+2026-05-06 20:41:06 | INFO     | ieee_cis.feature_engineer |   Skewness: nan → nan
+2026-05-06 20:41:06 | INFO     | ieee_cis.feature_engineer | FE: Temporal features from TransactionDT
+2026-05-06 20:41:06 | INFO     | ieee_cis.feature_engineer |   START_DATE         : 2017-12-01
+2026-05-06 20:41:06 | INFO     | ieee_cis.feature_engineer |   Date range         : 2017-12-02 00:00:00 → 2017-12-02 00:00:00
+2026-05-06 20:41:06 | INFO     | ieee_cis.feature_engineer |   PEAK_FRAUD_HOURS   : [5, 6, 7, 8, 9]
+2026-05-06 20:41:06 | INFO     | ieee_cis.feature_engineer |   Created: FE_hour, FE_dayofweek, FE_day, FE_month, FE_is_night, FE_is_weekend, FE_is_peak_fraud_hour, _TransactionDT_days
+2026-05-06 20:41:06 | INFO     | ieee_cis.feature_engineer | FE: D column normalization
+2026-05-06 20:41:06 | INFO     | ieee_cis.feature_engineer |   Formula  : FE_D{n}_normalized = D{n} - TransactionDT_days
+2026-05-06 20:41:06 | INFO     | ieee_cis.feature_engineer |   Created  : 0 normalized D features
+2026-05-06 20:41:06 | INFO     | ieee_cis.feature_engineer |   Columns  : []
+2026-05-06 20:41:06 | INFO     | ieee_cis.feature_engineer | FE: Card combination fingerprints
+2026-05-06 20:41:06 | INFO     | ieee_cis.feature_engineer |   Created: []
+2026-05-06 20:41:06 | INFO     | ieee_cis.feature_engineer | FE: UID features
+2026-05-06 20:41:06 | INFO     | ieee_cis.feature_engineer |   Created: []
+2026-05-06 20:41:06 | INFO     | ieee_cis.feature_engineer | FE: Email domain risk flags
+2026-05-06 20:41:06 | INFO     | ieee_cis.feature_engineer |   Created: []
+2026-05-06 20:41:06 | INFO     | ieee_cis.feature_engineer | FE: Browser risk flag skipped — id_31 not found
+2026-05-06 20:41:06 | INFO     | ieee_cis.feature_engineer | FE: Device type skipped — DeviceType not found
+2026-05-06 20:41:06 | INFO     | ieee_cis.feature_engineer | FE: Card aggregations
+2026-05-06 20:41:06 | INFO     | ieee_cis.feature_engineer |   [TEST] Applied 6 aggregation maps
+2026-05-06 20:41:06 | INFO     | ieee_cis.feature_engineer | FE: Frequency encoding
+2026-05-06 20:41:06 | INFO     | ieee_cis.feature_engineer |   [TEST] Applied 9 frequency maps
+2026-05-06 20:41:06 | INFO     | ieee_cis.feature_engineer | FE: Cleaned temp columns: ['_TransactionDT_days']
+2026-05-06 20:41:06 | INFO     | ieee_cis.feature_engineer | Total FE features applied : 8
+2026-05-06 20:41:06 | INFO     | ieee_cis.feature_engineer | Output shape              : (1, 11)
+2026-05-06 20:41:06 | INFO     | ieee_cis.feature_engineer | FEATURE ENGINEERING TEST/VAL COMPLETE
+2026-05-06 20:41:06 | INFO     | ieee_cis.feature_engineer | ==================================================

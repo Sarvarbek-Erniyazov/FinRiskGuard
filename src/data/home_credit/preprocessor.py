@@ -188,7 +188,7 @@ def impute_categorical(
     cat_fill_values: dict = None,
 ) -> Tuple[pd.DataFrame, dict]:
 
-    cat_cols = df.select_dtypes(include=["object"]).columns.tolist()
+    cat_cols = df.select_dtypes(include=["object", "string"]).columns.tolist()
 
     if cat_fill_values is not None:
         updates = {
@@ -240,7 +240,7 @@ def encode_categoricals(
 
     if cat_cols is None:
         cat_cols = [
-            c for c in df.select_dtypes(include=["object"]).columns
+            c for c in df.select_dtypes(include=["object", "string"]).columns
             if c != ID_COL
         ]
 

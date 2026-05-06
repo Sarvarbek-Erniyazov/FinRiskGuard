@@ -1,0 +1,91 @@
+2026-05-06 20:58:58 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-06 20:58:58 | INFO     | home_credit.preprocessor | PREPROCESSING TEST DATA
+2026-05-06 20:58:58 | INFO     | home_credit.preprocessor | Input shape: (1, 76)
+2026-05-06 20:58:58 | INFO     | home_credit.preprocessor | [TEST] Dropped 0 high-missing columns
+2026-05-06 20:58:58 | INFO     | home_credit.preprocessor | [TEST] Applied DAYS_EMPLOYED anomaly fix
+2026-05-06 20:58:58 | INFO     | home_credit.preprocessor | [TEST] Applied 7 NaN flag columns from train
+2026-05-06 20:58:58 | INFO     | home_credit.preprocessor | [TEST] Applied numerical imputation to 49 columns
+2026-05-06 20:58:58 | INFO     | home_credit.preprocessor | [TEST] Applied categorical imputation to 5 columns
+2026-05-06 20:58:58 | INFO     | home_credit.preprocessor | [TEST] Added 15 missing columns
+2026-05-06 20:58:58 | INFO     | home_credit.preprocessor | [TEST] OrdinalEncoder applied to 15 columns
+2026-05-06 20:58:58 | INFO     | home_credit.preprocessor | Output shape: (1, 99)
+2026-05-06 20:58:58 | INFO     | home_credit.preprocessor | PREPROCESSING TEST COMPLETE
+2026-05-06 20:58:58 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-06 20:59:01 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-06 20:59:01 | INFO     | home_credit.preprocessor | PREPROCESSING TEST DATA
+2026-05-06 20:59:01 | INFO     | home_credit.preprocessor | Input shape: (1, 76)
+2026-05-06 20:59:01 | INFO     | home_credit.preprocessor | [TEST] Dropped 0 high-missing columns
+2026-05-06 20:59:01 | INFO     | home_credit.preprocessor | [TEST] Applied DAYS_EMPLOYED anomaly fix
+2026-05-06 20:59:01 | INFO     | home_credit.preprocessor | [TEST] Applied 7 NaN flag columns from train
+2026-05-06 20:59:01 | INFO     | home_credit.preprocessor | [TEST] Applied numerical imputation to 49 columns
+2026-05-06 20:59:01 | INFO     | home_credit.preprocessor | [TEST] Applied categorical imputation to 5 columns
+2026-05-06 20:59:01 | INFO     | home_credit.preprocessor | [TEST] Added 15 missing columns
+2026-05-06 20:59:01 | INFO     | home_credit.preprocessor | [TEST] OrdinalEncoder applied to 15 columns
+2026-05-06 20:59:01 | INFO     | home_credit.preprocessor | Output shape: (1, 99)
+2026-05-06 20:59:01 | INFO     | home_credit.preprocessor | PREPROCESSING TEST COMPLETE
+2026-05-06 20:59:01 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-06 20:59:02 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-06 20:59:02 | INFO     | home_credit.preprocessor | PREPROCESSING TEST DATA
+2026-05-06 20:59:02 | INFO     | home_credit.preprocessor | Input shape: (1, 76)
+2026-05-06 20:59:02 | INFO     | home_credit.preprocessor | [TEST] Dropped 0 high-missing columns
+2026-05-06 20:59:02 | INFO     | home_credit.preprocessor | [TEST] Applied DAYS_EMPLOYED anomaly fix
+2026-05-06 20:59:02 | INFO     | home_credit.preprocessor | [TEST] Applied 7 NaN flag columns from train
+2026-05-06 20:59:02 | INFO     | home_credit.preprocessor | [TEST] Applied numerical imputation to 49 columns
+2026-05-06 20:59:02 | INFO     | home_credit.preprocessor | [TEST] Applied categorical imputation to 5 columns
+2026-05-06 20:59:02 | INFO     | home_credit.preprocessor | [TEST] Added 15 missing columns
+2026-05-06 20:59:02 | INFO     | home_credit.preprocessor | [TEST] OrdinalEncoder applied to 15 columns
+2026-05-06 20:59:02 | INFO     | home_credit.preprocessor | Output shape: (1, 99)
+2026-05-06 20:59:02 | INFO     | home_credit.preprocessor | PREPROCESSING TEST COMPLETE
+2026-05-06 20:59:02 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-06 20:59:02 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-06 20:59:02 | INFO     | home_credit.preprocessor | PREPROCESSING TEST DATA
+2026-05-06 20:59:02 | INFO     | home_credit.preprocessor | Input shape: (1, 76)
+2026-05-06 20:59:02 | INFO     | home_credit.preprocessor | [TEST] Dropped 0 high-missing columns
+2026-05-06 20:59:02 | INFO     | home_credit.preprocessor | [TEST] Applied DAYS_EMPLOYED anomaly fix
+2026-05-06 20:59:02 | INFO     | home_credit.preprocessor | [TEST] Applied 7 NaN flag columns from train
+2026-05-06 20:59:02 | INFO     | home_credit.preprocessor | [TEST] Applied numerical imputation to 49 columns
+2026-05-06 20:59:02 | INFO     | home_credit.preprocessor | [TEST] Applied categorical imputation to 5 columns
+2026-05-06 20:59:02 | INFO     | home_credit.preprocessor | [TEST] Added 15 missing columns
+2026-05-06 20:59:02 | INFO     | home_credit.preprocessor | [TEST] OrdinalEncoder applied to 15 columns
+2026-05-06 20:59:02 | INFO     | home_credit.preprocessor | Output shape: (1, 99)
+2026-05-06 20:59:02 | INFO     | home_credit.preprocessor | PREPROCESSING TEST COMPLETE
+2026-05-06 20:59:02 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-06 20:59:44 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-06 20:59:44 | INFO     | home_credit.preprocessor | PREPROCESSING TEST DATA
+2026-05-06 20:59:44 | INFO     | home_credit.preprocessor | Input shape: (1, 73)
+2026-05-06 20:59:44 | INFO     | home_credit.preprocessor | [TEST] Dropped 0 high-missing columns
+2026-05-06 20:59:44 | INFO     | home_credit.preprocessor | [TEST] Applied DAYS_EMPLOYED anomaly fix
+2026-05-06 20:59:44 | INFO     | home_credit.preprocessor | [TEST] Applied 7 NaN flag columns from train
+2026-05-06 20:59:44 | INFO     | home_credit.preprocessor | [TEST] Applied numerical imputation to 49 columns
+2026-05-06 20:59:44 | INFO     | home_credit.preprocessor | [TEST] Applied categorical imputation to 5 columns
+2026-05-06 20:59:44 | INFO     | home_credit.preprocessor | [TEST] Added 15 missing columns
+2026-05-06 20:59:44 | INFO     | home_credit.preprocessor | [TEST] OrdinalEncoder applied to 15 columns
+2026-05-06 20:59:44 | INFO     | home_credit.preprocessor | Output shape: (1, 96)
+2026-05-06 20:59:44 | INFO     | home_credit.preprocessor | PREPROCESSING TEST COMPLETE
+2026-05-06 20:59:44 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-06 21:02:33 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-06 21:02:33 | INFO     | home_credit.preprocessor | PREPROCESSING TEST DATA
+2026-05-06 21:02:33 | INFO     | home_credit.preprocessor | Input shape: (1, 76)
+2026-05-06 21:02:33 | INFO     | home_credit.preprocessor | [TEST] Dropped 0 high-missing columns
+2026-05-06 21:02:33 | INFO     | home_credit.preprocessor | [TEST] Applied DAYS_EMPLOYED anomaly fix
+2026-05-06 21:02:33 | INFO     | home_credit.preprocessor | [TEST] Applied 7 NaN flag columns from train
+2026-05-06 21:02:33 | INFO     | home_credit.preprocessor | [TEST] Applied numerical imputation to 49 columns
+2026-05-06 21:02:33 | INFO     | home_credit.preprocessor | [TEST] Applied categorical imputation to 5 columns
+2026-05-06 21:02:33 | INFO     | home_credit.preprocessor | [TEST] Added 15 missing columns
+2026-05-06 21:02:33 | INFO     | home_credit.preprocessor | [TEST] OrdinalEncoder applied to 15 columns
+2026-05-06 21:02:33 | INFO     | home_credit.preprocessor | Output shape: (1, 99)
+2026-05-06 21:02:33 | INFO     | home_credit.preprocessor | PREPROCESSING TEST COMPLETE
+2026-05-06 21:02:33 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-06 21:11:47 | INFO     | home_credit.preprocessor | ==================================================
+2026-05-06 21:11:47 | INFO     | home_credit.preprocessor | PREPROCESSING TEST DATA
+2026-05-06 21:11:47 | INFO     | home_credit.preprocessor | Input shape: (1, 76)
+2026-05-06 21:11:47 | INFO     | home_credit.preprocessor | [TEST] Dropped 0 high-missing columns
+2026-05-06 21:11:47 | INFO     | home_credit.preprocessor | [TEST] Applied DAYS_EMPLOYED anomaly fix
+2026-05-06 21:11:47 | INFO     | home_credit.preprocessor | [TEST] Applied 7 NaN flag columns from train
+2026-05-06 21:11:47 | INFO     | home_credit.preprocessor | [TEST] Applied numerical imputation to 49 columns
+2026-05-06 21:11:47 | INFO     | home_credit.preprocessor | [TEST] Applied categorical imputation to 5 columns
+2026-05-06 21:11:47 | INFO     | home_credit.preprocessor | [TEST] Added 15 missing columns
+2026-05-06 21:11:47 | INFO     | home_credit.preprocessor | [TEST] OrdinalEncoder applied to 15 columns
+2026-05-06 21:11:47 | INFO     | home_credit.preprocessor | Output shape: (1, 99)
+2026-05-06 21:11:47 | INFO     | home_credit.preprocessor | PREPROCESSING TEST COMPLETE
+2026-05-06 21:11:47 | INFO     | home_credit.preprocessor | ==================================================

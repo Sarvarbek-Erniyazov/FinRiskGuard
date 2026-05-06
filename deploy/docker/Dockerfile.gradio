@@ -1,0 +1,13 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+RUN pip install --no-cache-dir gradio requests
+
+COPY gradio/ ./gradio/
+
+ENV PYTHONPATH=/app
+
+EXPOSE 7860
+
+CMD ["python", "gradio/app.py"]
