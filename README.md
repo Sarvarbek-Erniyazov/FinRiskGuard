@@ -151,10 +151,14 @@ Every step was first explored in a Jupyter notebook, then hardened into producti
 
 | Service | Stack | Status |
 |---|---|---|
-| Fraud Detection API | FastAPI + Docker + AWS EC2 | 🚧 In Progress |
-| Credit Scoring API | FastAPI + Docker + AWS EC2 | 🚧 In Progress |
-| Demo UI — Fraud | Gradio | 🚧 In Progress |
-| Demo UI — Credit | Gradio | 🚧 In Progress |
+| Fraud Detection API | FastAPI + Docker + AWS EC2 | ✅ Live |
+| Credit Scoring API | FastAPI + Docker + AWS EC2 | ✅ Live |
+| Demo UI — Fraud | Gradio (HF Spaces) | ✅ Live |
+| Demo UI — Credit | Gradio (HF Spaces) | ✅ Live |
+
+🎯 **Live Demo:** [huggingface.co/spaces/Sarvarbek13/FinRiskGuard](https://huggingface.co/spaces/Sarvarbek13/FinRiskGuard)
+
+📖 **Full deployment documentation:** [docs/deployment.md](docs/deployment.md)
 
 ---
 
