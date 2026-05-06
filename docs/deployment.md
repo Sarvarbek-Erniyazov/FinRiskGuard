@@ -379,3 +379,7 @@ The Credit Scoring tab on HF Spaces. Applicant: `SK_ID_CURR 100002`, `AMT_CREDIT
 | AWS S3 model storage | ✅ Live | `finriskguard-models` bucket — 36 MB fraud, 134 MB credit |
 | AWS EC2 deployment | ✅ Live | `t3.micro`, Seoul (`ap-northeast-2`), both containers running |
 | Gradio demo — HF Spaces | ✅ Live | [huggingface.co/spaces/Sarvarbek13/FinRiskGuard](https://huggingface.co/spaces/Sarvarbek13/FinRiskGuard) — permanent, free |
+
+---
+
+← [Back to README](../README.md)
