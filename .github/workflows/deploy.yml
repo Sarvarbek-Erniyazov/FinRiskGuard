@@ -24,7 +24,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install --upgrade pip
+          python -m pip install --upgrade pip
           pip install -r requirements.txt
           pip install pytest httpx
 
@@ -82,9 +82,10 @@ jobs:
       - name: Deploy via SSH
         uses: appleboy/ssh-action@v1.0.3
         with:
-          host:      ${{ secrets.EC2_HOST }}
-          username:  ${{ secrets.EC2_USER }}
-          key:       ${{ secrets.EC2_SSH_KEY }}
+          host:            ${{ secrets.EC2_HOST }}
+          username:        ${{ secrets.EC2_USER }}
+          key:             ${{ secrets.EC2_SSH_KEY }}
+          command_timeout: 30m
           script: |
             set -e
 
