@@ -13,8 +13,12 @@ COPY src/       ./src/
 COPY api/       ./api/
 COPY configs/   ./configs/
 
-COPY outputs/models/fraud/  ./outputs/models/fraud/
-COPY outputs/models/credit/ ./outputs/models/credit/
+RUN pip install awscli
+ARG AWS_ACCESS_KEY_ID
+ARG AWS_SECRET_ACCESS_KEY
+ARG AWS_DEFAULT_REGION=us-east-1
+RUN aws s3 cp s3://finriskguard-models/models/fraud/  ./outputs/models/fraud/  --recursive
+RUN aws s3 cp s3://finriskguard-models/models/credit/ ./outputs/models/credit/ --recursive
 
 ENV PYTHONPATH=/app
 

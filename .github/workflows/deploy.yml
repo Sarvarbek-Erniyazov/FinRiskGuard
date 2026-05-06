@@ -56,6 +56,10 @@ jobs:
           tags: ${{ secrets.DOCKER_USERNAME }}/${{ env.IMAGE_API }}:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
+          build-args: |
+            AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY_ID }}
+            AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }}
+            AWS_DEFAULT_REGION=us-east-1
 
       - name: Build and push Gradio image
         uses: docker/build-push-action@v5
@@ -78,20 +82,23 @@ jobs:
       - name: Deploy via SSH
         uses: appleboy/ssh-action@v1.0.3
         with:
-          host:     ${{ secrets.EC2_HOST }}
-          username: ${{ secrets.EC2_USER }}
-          key:      ${{ secrets.EC2_SSH_KEY }}
+          host:      ${{ secrets.EC2_HOST }}
+          username:  ${{ secrets.EC2_USER }}
+          key:       ${{ secrets.EC2_SSH_KEY }}
           script: |
             set -e
 
+            # Yangi imajlarni yuklab olish
             docker pull ${{ secrets.DOCKER_USERNAME }}/${{ env.IMAGE_API }}:latest
             docker pull ${{ secrets.DOCKER_USERNAME }}/${{ env.IMAGE_GRADIO }}:latest
 
-            docker stop finriskguard-api    2>/dev/null || true
+            # Eski konteynerlarni to'xtatish va o'chirish
+            docker stop finriskguard-api 2>/dev/null || true
             docker stop finriskguard-gradio 2>/dev/null || true
-            docker rm   finriskguard-api    2>/dev/null || true
-            docker rm   finriskguard-gradio 2>/dev/null || true
+            docker rm finriskguard-api 2>/dev/null || true
+            docker rm finriskguard-gradio 2>/dev/null || true
 
+            # API konteynerini ishga tushirish
             docker run -d \
               --name finriskguard-api \
               --restart unless-stopped \
@@ -99,9 +106,12 @@ jobs:
               -e PYTHONPATH=/app \
               ${{ secrets.DOCKER_USERNAME }}/${{ env.IMAGE_API }}:latest
 
+            # API tayyor bo'lishini kutish va sog'lomlikni tekshirish
+            echo "Waiting for API to start..."
             sleep 30
-            curl -f http://localhost:8000/health || exit 1
+            curl -f http://localhost:8000/health || (docker logs finriskguard-api && exit 1)
 
+            # Gradio konteynerini ishga tushirish
             docker run -d \
               --name finriskguard-gradio \
               --restart unless-stopped \
